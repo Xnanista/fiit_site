@@ -1,0 +1,14 @@
+.logoholder{
+    background-color: #24a9dc;
+}
+
+#logo{
+    max-height: 90px;
+}
+
+#welcome{
+    background-image: url("images/FIIT_STU_01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
