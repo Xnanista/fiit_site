@@ -1,0 +1,29 @@
+/* YOUR CUSTOM STYLES */
+.view {
+    background-color: white;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar .dropdown-menu a:hover {
+
+    background-color: #4a84ef !important;
+}
+
+.blur {
+    background-image: url('../../images/FIIT_L.jpg');
+    height: 100vh;
+    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    filter: blur(5px);
+}
+
+.par{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (min-width: 992px){
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+}}
