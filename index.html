@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sk">
+<html lang="sk" ng-app="fiitSite">
 
 <head>
     <meta charset="utf-8">
@@ -14,21 +14,20 @@
     <link href="mdbootstrap/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="mdbootstrap/css/style.css" rel="stylesheet">
-
     <link rel="stylesheet" href="glyphs/css/whhg.css">
 
-
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+    <script src="js/app.js"></script>
 </head>
 
-<body>
-
-<!-- Start your project here-->
-
+<body >
 <!--Main Navigation-->
 <header>
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">FIIT</a>
+        <a class="navbar-brand" href="#!pk">FIIT</a>
 
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -71,7 +70,8 @@
             <!-- Search form -->
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="text" placeholder="Vyhľadávanie" aria-label="Search">
-                <button class="btn btn-outline-success btn-sm my-0" type="submit"><i class="icon-search"></i></button>
+                <button class="btn btn-outline-success btn-sm my-0" type="submit"><img height="15px"
+                                                                                       src="images/lupa.svg"></button>
             </form>
 
             <!-- Language -->
@@ -91,223 +91,34 @@
     </nav>
 </header>
 <!--Main Layout-->
-<section id="intro" class="d-flex align-items-center justify-content-center" style="height: 100vh">
-    <div class="row mt-5">
-        <div class="col-md-12 wow fadeIn mb-3">
-            <div class="intro-info-content text-center">
-                <h1 class="display-1 font-bold mb-2 wow fadeInDown" data-wow-delay="0.4s">VITAJ</h1>
-                <h5 class="display-4 font-up mb-3 mt-1 wow fadeInDown" data-wow-delay="1.5s">VO SVETE IT</h5>
-                <hr class="hr-dark mt-4 wow fadeInDown" data-wow-delay="2s">
-                <h4 class="wow fadeInDown" data-wow-delay="2s">Fakulta informatiky a informačných technológií</h4>
-                <a id="vstup" class="btn btn-outline-black wow fadeInDown" onclick="intro()"
-                   data-wow-delay="2s">VSTÚPIŤ</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="about" class="container">
-    <div class="card">
-        <img class="img-fluid"
-             src="images/FIIT_STU_01.jpg"
-             alt="Card image cap">
-        <div class="card-body">
-            <h4 class="card-title">O NÁS</h4>
-            <!--Text-->
-            <div class="card-text">
-                <p>Vítame vás v sídle Fakulty informatiky a informačných technológií
-                    Slovenskej technickej univerzity v Bratislave</p>
-                <p>Fakulta informatiky a informačných technológií (FIIT) je jednou zo siedmich fakúlt Slovenskej
-                    technickej univerzity v Bratislave (STU). FIIT STU pokrýva komplexne oblasť informatiky a
-                    informačných technológií (IIT) vo výskume a vzdelávaní. Je prvou fakultou na Slovensku s takýmto
-                    poslaním. Napriek tomu, že ide o fakultu novú, STU má vo vzdelávaní a výskume v oblasti IIT
-                    dlhodobé skúsenosti a dosiahla celý rad významných výsledkov.</p>
-
-                <p>Vznikla v roku 2003 na základe požiadaviek trhu a časť jej študijného programu je tvorená priamo
-                    s partnerskými organizáciami. Základom pre vznik FIIT bolo pracovisko (Katedra informatiky a
-                    výpočtovej techniky), ktoré do vzniku FIIT zabezpečovalo vzdelávanie a výskum v oblasti IIT na
-                    STU (v rámci FEI STU).</p>
-
-                <p>V súčasnosti vychováva viac ako tisícku študentov v troch stupňoch štúdia (bakalárske,
-                    inžinierske, doktorandské). Letný semester akademického roka 2012/13 otvorila v novopostavenej
-                    budove v Mlynskej doline, kde pokračuje v budovaní centra výskumu a vzdelávania v informačných a
-                    komunikačných technológiách na Slovensku.</p>
-
-                <p>Naši absolventi patria medzi najlepšie zarábajúcich absolventov s istotou zamestnania.</p>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section id="studies" class="container mt-5">
-    <div class="card">
-        <div class="img-fluid text-center pt-3" style="background-color: white;">
-            <p class="display-4 font-up">Štúdiá</p>
-        </div>
-        <div class="card-body grey">
-            <div class="card-text row">
-                <div class="col-md-3">
-                    <div class="card">
-                        <!--Card image-->
-                        <img class="img-fluid"
-                             src="images/studia/b4.svg"
-                             alt="Card image cap">
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title black-text">Bakalárske 4 ročné</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-outline-black btn-block">Chcem byť bakalárom!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <!--Card image-->
-                        <img class="img-fluid"
-                             src="images/studia/b3.svg"
-                             alt="Card image cap">
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title black-text">Bakalárske 3 ročné</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-outline-black btn-block">Chcem byť bakalárom!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <!--Card image-->
-                        <img class="img-fluid"
-                             src="images/studia/i2.svg"
-                             alt="Card image cap">
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title black-text">Inžinierske 2 ročné</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-outline-black btn-block">Chcem byť inžinierom!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <!--Card image-->
-                        <img class="img-fluid"
-                             src="images/studia/i3.svg"
-                             alt="Card image cap">
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title black-text">Inžinierske 3 ročné</h4>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-outline-black btn-block">Chcem byť inžinierom!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section id="compare" class="container mt-5">
-
-    <div class="card">
-        <div class="img-fluid text-center">
-            <p class="display-4 font-up pt-3">Prečo práve my</p>
-        </div>
-    </div>
-    <div class="card-body grey">
-        <div class="card-text row">
-            <div class="col-md-3"></div>
-            <div class="col-md-3">
-                <div class="card">
-                    <!--Card content-->
-                    <div class="card-body">
-                        <!--Title-->
-                        <h4 class="text-center card-title black-text">FIIT STU</h4>
-                        <!--Text-->
-                        <ul class="list-group">
-                            <li class="list-group-item">+ Nová budova</li>
-                            <li class="list-group-item">+ Skvelá dostupnosť</li>
-                            <li class="list-group-item">+ Úžastný profesory a profesorky</li>
-                            <li class="list-group-item">+ Praktická výučba</li>
-                            <li class="list-group-item">+ Spoločenské akcie</li>
-                            <li class="list-group-item">+ Odborné skupiny</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card">
-                    <!--Card image-->
-                    <!--Card content-->
-                    <div class="card-body">
-                        <!--Title-->
-                        <h4 class="text-center card-title">OSTATNÝ</h4>
-                        <!--Text-->
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3"></div>
-        </div>
-    </div>
-
-</section>
-
-
-<!--Footer-->
-<footer id="footer" class="page-footer grey center-on-small-only">
-
-    <!--Footer Links-->
-    <div class="container">
-        <div class="row p-2">
-
-            <!--First column-->
-            <div class="col-md-6">
-                <h5 class="title">Footer Content</h5>
-                <p>Here you can use rows and columns here to organize your footer content.</p>
-            </div>
-            <!--/.First column-->
-
-            <!--Second column-->
-            <div class="col-md-6">
-                <h5 class="title">Links</h5>
-                <ul>
-                    <li><a href="#!">Link 1</a></li>
-                    <li><a href="#!">Link 2</a></li>
-                    <li><a href="#!">Link 3</a></li>
-                    <li><a href="#!">Link 4</a></li>
+<ng-view></ng-view>
+<section id="footer" class="container-fluid d-flex align-items-center justify-content-center grey page">
+    <div class="flex-row flex-center">
+        <div class="row">
+            <div class="col-md-4">
+                <h5 class="white-text">Kontakt</h5>
+                <ul class="list-group" style="color: black">
+                    <li class="list-group-item">Telefón: +421987985425</li>
+                    <li class="list-group-item">E-mail: fiit@stuba.sk</li>
+                    <li class="list-group-item">Facebook: FIITSTU</li>
                 </ul>
             </div>
-            <!--/.Second column-->
+            <div class="col-md-4">
+                <h5 class="white-text">Kde nás nájdete</h5>
+                <div id="map" style="width: 100%; min-height: 200px;"></div>
+            </div>
+            <div class="col-md-4">
+                <h5 class="white-text">Hromadná doprava</h5>
+                <ul class="list-group" style="color: black">
+                    <li class="list-group-item">Mlynská dolina: 31, 39</li>
+                    <li class="list-group-item">Botanická záhrada: 32, 29, 4, 5, 6, 9</li>
+                </ul>
+            </div>
         </div>
     </div>
-    <!--/.Footer Links-->
+</section>
 
-    <!--Copyright-->
-    <div class="footer-copyright">
-        <div class="container-fluid">
-            © 2015 Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
-
-        </div>
-    </div>
-    <!--/.Copyright-->
-
-</footer>
+<!--Footer-->
 <!--/.Footer-->
 <!-- /Start your project here-->
 
@@ -321,30 +132,45 @@
 <script type="text/javascript" src="mdbootstrap/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="mdbootstrap/js/mdb.min.js"></script>
+<!-- Scrollify  -->
+<script type="text/javascript" src="plugins/Scrollify-master/Gruntfile.js"></script>
+<script type="text/javascript" src="plugins/Scrollify-master/jquery.scrollify.js"></script>
+
+
+<script>
+    function initMap() {
+        var FIIT = {lat: 48.153823, lng: 17.071865};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: FIIT
+        });
+        var marker = new google.maps.Marker({
+            position: FIIT,
+            map: map
+        });
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu_EGJ5R26FBggP3tvoOv54CnSmQ189oA&callback=initMap">
+</script>
 
 
 <script>
     $(document).ready(function () {
         var wow = new WOW().init();
+        intro = function () {
+            $('html, body')
+                .animate({
+                    scrollTop: $("#video").offset().top
+                }, 500);
+        };
+
+        $(function () {
+            $.scrollify({
+                section: ".page"
+            });
+        });
     });
-
-    intro = function () {
-        $('html, body')
-            .animate({
-                scrollTop: $("#about").offset().top
-            }, 500);
-    };
-
-    /*$(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-        var objectSelect = $("#intro");
-        var objectPosition = objectSelect.offset().top;
-        if (scroll +80 > objectPosition) {
-            $(".navbar").addClass("fixed-top");
-        } else {
-            $(".navbar").removeClass("fixed-top");
-        }
-    });*/
 </script>
 
 </body>

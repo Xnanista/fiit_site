@@ -2,9 +2,9 @@ angular.module("fiitSite", ["ngRoute"])
     .config(function ($routeProvider) {
         $routeProvider
             .when("/", {
-                templateUrl: "sites/intro.html"
+                templateUrl: "sites/home.html"
             })
             .when("/pk", {
-                templateUrl: "sites/prijimacie_konanie.html"
+                templateUrl: "sites/intro.html"
             })
     });
