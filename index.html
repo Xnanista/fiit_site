@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="sk" ng-app="fiitSite">
+<html lang="sk">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>FIIT</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -14,20 +14,13 @@
     <link href="mdbootstrap/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="mdbootstrap/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="glyphs/css/whhg.css">
-
-    <!-- AngularJS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
-    <script src="js/app.js"></script>
 </head>
 
-<body >
+<body>
 <!--Main Navigation-->
 <header>
-
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#!pk">FIIT</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="http://fiit.stuba.sk">FIIT</a>
 
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -46,23 +39,27 @@
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false">Odbory</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Bakalárske</a>
-                        <a class="dropdown-item" href="#">Inžinierske</a>
+                        <a class="dropdown-item" href="templates/Template.html#!/odbory/bakalar">Bakalárske</a>
+                        <a class="dropdown-item" href="templates/Template.html#!/odbory/inzinier">Inžinierske</a>
+                        <a class="dropdown-item" href="templates/Template.html#!/odbory/doktorand">Doktorandské</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false">Prijímacie konanie</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Podmienky</a>
-                        <a class="dropdown-item" href="#">Prihláška</a>
+                        <a class="dropdown-item" href="templates/Template.html#!prijatie/podmienky">Podmienky prijatia</a>
+                        <a class="dropdown-item" href="templates/Template.html#!prijatie/prihlaska">Prihláška</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Ubytovanie a strava</a>
+                    <a class="nav-link" href="templates/Template.html#!ubytovanieastrava">Ubytovanie a strava</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Financovanie</a>
+                    <a class="nav-link" href="templates/Template.html#!financie">Financovanie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#templates/Template.html#!vyskum">Výskum</a>
                 </li>
             </ul>
             <!-- Links -->
@@ -91,7 +88,7 @@
     </nav>
 </header>
 <!--Main Layout-->
-<section id="intro" class="container-fluid d-flex align-items-center justify-content-center page" style="height: 100vh">
+<section id="intro" class="container-fluid d-flex align-items-center justify-content-center page">
     <div class="row mt-5">
         <div class="col-md-12 wow fadeIn mb-3">
             <div class="intro-info-content text-center">
@@ -99,33 +96,37 @@
                 <h5 class="display-4 font-up mb-3 mt-1 wow fadeInDown" data-wow-delay="1.5s">VO SVETE IT</h5>
                 <hr class="hr-dark mt-4 wow fadeInDown" data-wow-delay="2s">
                 <h4 class="wow fadeInDown" data-wow-delay="2s">Fakulta informatiky a informačných technológií</h4>
-                <a id="vstup" class="btn btn-outline-black wow fadeInDown"
-                   data-wow-delay="2s" onclick="intro()">VSTÚPIŤ</a>
+                <a class="btn btn-outline-black wow fadeInDown"
+                   data-wow-delay="2s" onclick="nextpage()">VSTÚPIŤ</a>
             </div>
         </div>
     </div>
 </section>
 
-<section id="video" class="container-fluid page" style="min-height: 100vh">
-    <div class="row flex-center">
-        <div class="col-md-1"></div>
-        <div class="col-md-10" style="height: 80vh">
-            <iframe class="z-depth-1-half" width="100%" height="100%" src="https://www.youtube.com/embed/4JbPBcoOO9I"
-                    frameborder="0"
+<section id="video" class="container-fluid d-flex align-items-center justify-content-center  page">
+    <div class="flex-column">
+        <div class=" display-2 flex-center mt-5">
+            <p class="font-up font-bold">Pozrite sa ku nám</p>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4JbPBcoOO9I"
                     allowfullscreen></iframe>
         </div>
-        <div class="col-md-1"></div>
+        <div class="flex-row flex-center mt-4">
+            <a style="border-radius: 50%" class="btn btn-outline-black p-2 " onclick="nextpage()"><img height="15px"
+                                                                                                       src="images/down.svg">
+            </a>
+        </div>
     </div>
+
 </section>
 
-<section id="compare" class="container-fluid d-flex align-items-center justify-content-center  page"
-         style="min-height: 100vh">
-    <div class="flex-column">
+<section id="compare" class="container-fluid d-flex align-items-center justify-content-center  page">
+    <div class="d-flex flex-column">
         <div class="row display-2 flex-center mt-5">
             <p class="font-up font-bold">Prečo fiit</p>
         </div>
-        <div class="">
-            <div class="flex-row flex-center">
+            <div class="flex-row">
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="card card-body col-md-3 m-4">
@@ -145,7 +146,7 @@
                     <div class="col-md-1"></div>
                 </div>
             </div>
-            <div class="flex-row flex-center">
+            <div class="flex-row">
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="card card-body col-md-3 m-4">
@@ -166,7 +167,7 @@
                     <div class="col-md-1"></div>
                 </div>
             </div>
-            <div class="flex-row flex-center">
+            <div class="flex-row">
                 <div class="row">
                     <div class="col-md-1"></div>
                     <div class="card card-body col-md-3 m-4">
@@ -187,17 +188,20 @@
                     <div class="col-md-1"></div>
                 </div>
             </div>
+        <div class="flex-row flex-center mt-2">
+            <a style="border-radius: 50%" class="btn btn-outline-black p-2 " onclick="nextpage()"><img height="15px"
+                                                                                                       src="images/down.svg">
+            </a>
         </div>
     </div>
 </section>
 
-<section id="studies" class="container-fluid d-flex align-items-center justify-content-center  page"
-         style="min-height: 100vh;">
+<section id="studies" class="container-fluid d-flex align-items-center justify-content-center  page">
     <div class="flex-column">
-        <div class="row display-2 flex-center mt-5">
+        <div class="flex-row display-2 flex-center flex-wrap mt-5">
             <p class="font-up font-bold">Programy</p>
         </div>
-        <div class="row flex-row flex-center  p-4">
+        <div class="row flex-row flex-center p-4 m-4">
             <div class="col-md-1"></div>
             <div class="col-md-3 pt-lg-5 pb-3">
                 <div class="card">
@@ -236,11 +240,16 @@
             </div>
             <div class="col-md-1"></div>
         </div>
+        <div class="row flex-row flex-center mt-4">
+            <a style="border-radius: 50%" class="btn btn-outline-black p-2 " onclick="nextpage()"><img height="15px"
+                                                                                                       src="images/down.svg">
+            </a>
+        </div>
     </div>
 </section>
 
 <section id="about" class="container-fluid d-flex align-items-center justify-content-center page"
-         style="min-height: 100vh; background: url('images/FIIT_L.jpg') no-repeat center; background-size: 100% 100%;">
+         style="background: url('images/FIIT_L.jpg') no-repeat center; background-size: 100% 100%;">
     <div class="flex-column">
         <div class="row display-2 flex-center mt-5">
             <p class="font-up font-bold white-text">O nás</p>
@@ -271,39 +280,79 @@
             </div>
             <div class="col-md-1"></div>
         </div>
+        <div class="flex-row row flex-center mt-4">
+            <a style="border-radius: 50%" class="btn btn-outline-black p-2 " onclick="nextpage()"><img height="15px"
+                                                                                                       src="images/down.svg">
+            </a>
+        </div>
     </div>
 
 
 </section>
-<section id="footer" class="container-fluid d-flex align-items-center justify-content-center grey page">
-    <div class="flex-row flex-center">
-        <div class="row">
-            <div class="col-md-4">
-                <h5 class="white-text">Kontakt</h5>
-                <ul class="list-group" style="color: black">
-                    <li class="list-group-item">Telefón: +421987985425</li>
-                    <li class="list-group-item">E-mail: fiit@stuba.sk</li>
-                    <li class="list-group-item">Facebook: FIITSTU</li>
-                </ul>
+
+<section id="footer" class=" d-flex align-items-center justify-content-center grey page">
+
+    <div class="d-flex flex-row row">
+        <div class="d-flex flex-column col-md-6">
+            <div class="p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Kde nás nájdete</h4>
+                        <div class="" id="map" style="width: 100%; min-height: 250px;"></div>
+                        <p class="card-text">Fakulta informatiky a informačných technológií<br>Ilkovičova 2<br>842 16 Bratislava</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h5 class="white-text">Kde nás nájdete</h5>
-                <div id="map" style="width: 100%; min-height: 200px;"></div>
+            <div class="p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Sociálne siete</h4>
+                        <a href="#" class="btn btn-outline-blue btn-block">Facebook</a>
+                        <a href="#" class="btn btn-outline-red btn-block">YouTube</a>
+                        <a href="#" class="btn btn-outline-blue-grey btn-block">LinkedIn</a>
+
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h5 class="white-text">Hromadná doprava</h5>
-                <ul class="list-group" style="color: black">
-                    <li class="list-group-item">Mlynská dolina: 31, 39</li>
-                    <li class="list-group-item">Botanická záhrada: 32, 29, 4, 5, 6, 9</li>
-                </ul>
+        </div>
+        <div class="d-flex flex-column col-md">
+            <div class="p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Kontakt</h4>
+                        <ul class="list-group" style="color: black">
+                            <li class="list-group-item">Telefón<br>+421 2 210 22 204</li>
+                            <li class="list-group-item">E-mail<br>info@fiit.stuba.sk</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="card">
+                    <div class="card-body align-content-center">
+                        <a href="http://ects.stuba.sk" class=""><img style="max-height: 100px" src="images/ects-gray-stu.png"></a>
+                        <a href="http://ds.stuba.sk" class=""><img style="max-height: 100px" src="images/ds-gray-stu.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title ">Hromadná doprava</h4>
+                        <ul class="list-group" style="color: black">
+                            <li class="list-group-item">Mlynská dolina<br>31, 39</li>
+                            <li class="list-group-item">Botanická záhrada<br>32, 29, 4, 5, 6, 9</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+
 </section>
 
-<!--Footer-->
-<!--/.Footer-->
-<!-- /Start your project here-->
 
 <!-- SCRIPTS -->
 
@@ -318,44 +367,12 @@
 <!-- Scrollify  -->
 <script type="text/javascript" src="plugins/Scrollify-master/Gruntfile.js"></script>
 <script type="text/javascript" src="plugins/Scrollify-master/jquery.scrollify.js"></script>
+<script type="text/javascript" src="js/ScrollifyCongig.js"></script>
 
-
-<script>
-    function initMap() {
-        var FIIT = {lat: 48.153823, lng: 17.071865};
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 16,
-            center: FIIT
-        });
-        var marker = new google.maps.Marker({
-            position: FIIT,
-            map: map
-        });
-    }
-</script>
+<script type="text/javascript" src="js/map.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu_EGJ5R26FBggP3tvoOv54CnSmQ189oA&callback=initMap">
 </script>
-
-
-<script>
-    $(document).ready(function () {
-        var wow = new WOW().init();
-        intro = function () {
-            $('html, body')
-                .animate({
-                    scrollTop: $("#video").offset().top
-                }, 500);
-        };
-
-        $(function () {
-            $.scrollify({
-                section: ".page"
-            });
-        });
-    });
-</script>
-
 </body>
 
 </html>
