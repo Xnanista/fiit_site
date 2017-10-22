@@ -1,8 +1,20 @@
 angular.module("fiitSite", ["ngRoute"])
     .config(function ($routeProvider) {
         $routeProvider
+            .when("/odbory", {
+                templateUrl: "../partials/odbory.html"
+            })
             .when("/odbory/bakalar", {
                 templateUrl: "../partials/odbory_bakalar.html"
+            })
+            .when("/odbory/bakalar/informatika", {
+                templateUrl: "../partials/odbory_bakalar_informatika.html"
+            })
+            .when("/odbory/bakalar/infomacna_bezpecnost", {
+                templateUrl: "../partials/odbory_bakalar_informacnabezpecnost.html"
+            })
+            .when("/odbory/bakalar/internetove_technologie", {
+                templateUrl: "../partials/odbory_bakalar_internetovetechnologie.html"
             })
             .when("/odbory/inzinier", {
                 templateUrl: "../partials/odbory_inzinier.html"
