@@ -13,14 +13,15 @@
     <!-- Material Design Bootstrap -->
     <link href="mdbootstrap/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="mdbootstrap/css/style.css" rel="stylesheet">
+    <link href="mdbootstrap/css/custom_styles.css" rel="stylesheet">
 </head>
 
 <body>
 <!--Main Navigation-->
 <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="http://fiit.stuba.sk">FIIT</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #24a9dc">
+        <a class="navbar-brand" href="http://fiit.stuba.sk"><img src="images/stu_napis.svg"
+                                                                 style="width: 35px; height: 100%;"></a>
 
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -39,6 +40,7 @@
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false">Odbory</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="templates/Template.html#!/odbory">Prehľad odborov</a>
                         <a class="dropdown-item" href="templates/Template.html#!/odbory/bakalar">Bakalárske</a>
                         <a class="dropdown-item" href="templates/Template.html#!/odbory/inzinier">Inžinierske</a>
                         <a class="dropdown-item" href="templates/Template.html#!/odbory/doktorand">Doktorandské</a>
@@ -48,7 +50,8 @@
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false">Prijímacie konanie</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="templates/Template.html#!prijatie/podmienky">Podmienky prijatia</a>
+                        <a class="dropdown-item" href="templates/Template.html#!prijatie/podmienky">Podmienky
+                            prijatia</a>
                         <a class="dropdown-item" href="templates/Template.html#!prijatie/prihlaska">Prihláška</a>
                     </div>
                 </li>
@@ -59,7 +62,7 @@
                     <a class="nav-link" href="templates/Template.html#!financie">Financovanie</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#templates/Template.html#!vyskum">Výskum</a>
+                    <a class="nav-link" href="templates/Template.html#!vyskum">Výskum</a>
                 </li>
             </ul>
             <!-- Links -->
@@ -88,7 +91,7 @@
     </nav>
 </header>
 <!--Main Layout-->
-<section id="intro" class="container-fluid d-flex align-items-center justify-content-center page">
+<section id="intro" class="container-fluid d-flex align-items-center justify-content-center full-page">
     <div class="row mt-5">
         <div class="col-md-12 wow fadeIn mb-3">
             <div class="intro-info-content text-center">
@@ -96,14 +99,15 @@
                 <h5 class="display-4 font-up mb-3 mt-1 wow fadeInDown" data-wow-delay="1.5s">VO SVETE IT</h5>
                 <hr class="hr-dark mt-4 wow fadeInDown" data-wow-delay="2s">
                 <h4 class="wow fadeInDown" data-wow-delay="2s">Fakulta informatiky a informačných technológií</h4>
-                <a class="btn btn-outline-black wow fadeInDown"
-                   data-wow-delay="2s" onclick="nextpage()">VSTÚPIŤ</a>
+                <a class="btn btn-outline-black pulse_black p-2 wow fadeInDown" data-wow-delay="2s" onclick="nextpage()"><img height="15px"
+                                                                                                               src="images/arrows/down.svg">
+                </a>
             </div>
         </div>
     </div>
 </section>
 
-<section id="video" class="container-fluid d-flex align-items-center justify-content-center  page">
+<section id="video" class="container-fluid d-flex align-items-center justify-content-center full-page">
     <div class="flex-column">
         <div class=" display-2 flex-center mt-5">
             <p class="font-up font-bold">Pozrite sa ku nám</p>
@@ -113,90 +117,90 @@
                     allowfullscreen></iframe>
         </div>
         <div class="flex-row flex-center mt-4">
-            <a style="border-radius: 50%" class="btn btn-outline-black p-2 " onclick="nextpage()"><img height="15px"
-                                                                                                       src="images/down.svg">
+            <a class="btn btn-outline-black pulse_black p-2" onclick="nextpage()"><img height="15px"
+                                                                                       src="images/arrows/down.svg">
             </a>
         </div>
     </div>
 
 </section>
 
-<section id="compare" class="container-fluid d-flex align-items-center justify-content-center  page">
+<section id="compare" class="container-fluid d-flex align-items-center justify-content-center full-page">
     <div class="d-flex flex-column">
         <div class="row display-2 flex-center mt-5">
-            <p class="font-up font-bold">Prečo fiit</p>
+            <p class="font-up font-bold">Prečo byť fiit</p>
         </div>
-            <div class="flex-row">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="card card-body col-md-3 m-4">
-                        <h4 class="card-title">1. Zamestnanosť</h4>
-                        <p class="card-text">Absolventi FIIT STU v Bratislave sú najžiadanejší na trhu práce.</p>
-                    </div>
-                    <div class="card card-body col-md-3 m-4">
-                        <h4 class="card-title">2. Kvalita</h4>
-                        <p class="card-text">Štúdium na FIIT je zabezpečované kvalifikovanými pedagógmi a zároveň
-                            odborníkmi z praxe, ktorí riešia so študentmi hlavne praktické zadania.</p>
-                    </div>
-                    <div class="card card-body col-md-3 m-4">
-                        <h4 class="card-title">3. Progresívnosť</h4>
-                        <p class="card-text">Informatika a informačné technológie patria k najprogresívnejším oblastiam,
-                            ktoré významne ovplyvňujú našu budúcnosť.</p>
-                    </div>
-                    <div class="col-md-1"></div>
+        <div class="flex-row">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="card card-body col-md-3 m-4">
+                    <h4 class="card-title">1. Zamestnanosť</h4>
+                    <p class="card-text">Absolventi FIIT STU v Bratislave sú najžiadanejší na trhu práce.</p>
                 </div>
-            </div>
-            <div class="flex-row">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="card card-body col-md-3 m-4">
-                        <h4 class="card-title">4. Možnosť získať certifikát IET</h4>
-                        <p class="card-text">Sme jediná fakulta v strednej Európe, ktorá ponúka aj medzinárodne
-                            akreditované bakalárske a inžinierske študijné programy.</p>
-                    </div>
-                    <div class="card card-body col-md-3 m-4">
-                        <h4 class="card-title">5. Rozmanitosť</h4>
-                        <p class="card-text">Ponúkame rozmanitosť študijných programov s orientáciou na rôzne oblasti
-                            informatiky a informačných technológií.</p>
-                    </div>
-                    <div class="card card-body col-md-3 m-4">
-                        <h4 class="card-title">6. Inovatívnosť</h4>
-                        <p class="card-text">Progresívne technológie sú nielen predmetom výučby, ale aj nástrojom
-                            zefektívnenia samotnej výučby.</p>
-                    </div>
-                    <div class="col-md-1"></div>
+                <div class="card card-body col-md-3 m-4">
+                    <h4 class="card-title">2. Kvalita</h4>
+                    <p class="card-text">Štúdium na FIIT je zabezpečované kvalifikovanými pedagógmi a zároveň
+                        odborníkmi z praxe, ktorí riešia so študentmi hlavne praktické zadania.</p>
                 </div>
-            </div>
-            <div class="flex-row">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="card card-body col-md-3 m-4">
-                        <h4 class="card-title">7. Výskum</h4>
-                        <p class="card-text">Výskumná činnosť je neoddeliteľná súčasť inžinierskeho a doktorandského
-                            štúdia. Študenti majú možnosť zapojiť sa do výskumu už aj v bakalárskom štúdiu.</p>
-                    </div>
-                    <div class="card card-body col-md-3 m-4">
-                        <h4 class="card-title">8. Flexibilnosť</h4>
-                        <p class="card-text">Každý študent si môže prispôsobiť tempo štúdia svojim schopnostiam a ďalším
-                            aktivitám.</p>
-                    </div>
-                    <div class="card card-body col-md-3 m-4">
-                        <h4 class="card-title">9. Podpora</h4>
-                        <p class="card-text"> Možnosť získať motivačné štipendium, pôžičky a ďalšie výhody rozsiahleho
-                            sociálneho programu, možnosť absolvovania časti štúdia v zahraničí.</p>
-                    </div>
-                    <div class="col-md-1"></div>
+                <div class="card card-body col-md-3 m-4">
+                    <h4 class="card-title">3. Progresívnosť</h4>
+                    <p class="card-text">Informatika a informačné technológie patria k najprogresívnejším oblastiam,
+                        ktoré významne ovplyvňujú našu budúcnosť.</p>
                 </div>
+                <div class="col-md-1"></div>
             </div>
+        </div>
+        <div class="flex-row">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="card card-body col-md-3 m-4">
+                    <h4 class="card-title">4. Možnosť získať certifikát IET</h4>
+                    <p class="card-text">Sme jediná fakulta v strednej Európe, ktorá ponúka aj medzinárodne
+                        akreditované bakalárske a inžinierske študijné programy.</p>
+                </div>
+                <div class="card card-body col-md-3 m-4">
+                    <h4 class="card-title">5. Rozmanitosť</h4>
+                    <p class="card-text">Ponúkame rozmanitosť študijných programov s orientáciou na rôzne oblasti
+                        informatiky a informačných technológií.</p>
+                </div>
+                <div class="card card-body col-md-3 m-4">
+                    <h4 class="card-title">6. Inovatívnosť</h4>
+                    <p class="card-text">Progresívne technológie sú nielen predmetom výučby, ale aj nástrojom
+                        zefektívnenia samotnej výučby.</p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="card card-body col-md-3 m-4">
+                    <h4 class="card-title">7. Výskum</h4>
+                    <p class="card-text">Výskumná činnosť je neoddeliteľná súčasť inžinierskeho a doktorandského
+                        štúdia. Študenti majú možnosť zapojiť sa do výskumu už aj v bakalárskom štúdiu.</p>
+                </div>
+                <div class="card card-body col-md-3 m-4">
+                    <h4 class="card-title">8. Flexibilnosť</h4>
+                    <p class="card-text">Každý študent si môže prispôsobiť tempo štúdia svojim schopnostiam a ďalším
+                        aktivitám.</p>
+                </div>
+                <div class="card card-body col-md-3 m-4">
+                    <h4 class="card-title">9. Podpora</h4>
+                    <p class="card-text"> Možnosť získať motivačné štipendium, pôžičky a ďalšie výhody rozsiahleho
+                        sociálneho programu, možnosť absolvovania časti štúdia v zahraničí.</p>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
         <div class="flex-row flex-center mt-2">
-            <a style="border-radius: 50%" class="btn btn-outline-black p-2 " onclick="nextpage()"><img height="15px"
-                                                                                                       src="images/down.svg">
+            <a class="btn btn-outline-black pulse_black p-2" onclick="nextpage()"><img height="15px"
+                                                                                       src="images/arrows/down.svg">
             </a>
         </div>
     </div>
 </section>
 
-<section id="studies" class="container-fluid d-flex align-items-center justify-content-center  page">
+<section id="studies" class="container-fluid d-flex align-items-center justify-content-center full-page">
     <div class="flex-column">
         <div class="flex-row display-2 flex-center flex-wrap mt-5">
             <p class="font-up font-bold">Programy</p>
@@ -241,14 +245,14 @@
             <div class="col-md-1"></div>
         </div>
         <div class="row flex-row flex-center mt-4">
-            <a style="border-radius: 50%" class="btn btn-outline-black p-2 " onclick="nextpage()"><img height="15px"
-                                                                                                       src="images/down.svg">
+            <a class="btn btn-outline-black pulse_black p-2" onclick="nextpage()"><img height="15px"
+                                                                                       src="images/arrows/down.svg">
             </a>
         </div>
     </div>
 </section>
 
-<section id="about" class="container-fluid d-flex align-items-center justify-content-center page"
+<section id="about" class="container-fluid d-flex align-items-center justify-content-center full-page"
          style="background: url('images/FIIT_L.jpg') no-repeat center; background-size: 100% 100%;">
     <div class="flex-column">
         <div class="row display-2 flex-center mt-5">
@@ -281,8 +285,8 @@
             <div class="col-md-1"></div>
         </div>
         <div class="flex-row row flex-center mt-4">
-            <a style="border-radius: 50%" class="btn btn-outline-black p-2 " onclick="nextpage()"><img height="15px"
-                                                                                                       src="images/down.svg">
+            <a class="btn btn-outline-black pulse_black p-2" onclick="nextpage()"><img height="15px"
+                                                                                       src="images/arrows/down.svg">
             </a>
         </div>
     </div>
@@ -290,89 +294,99 @@
 
 </section>
 
-<section id="footer" class=" d-flex align-items-center justify-content-center grey page">
+<section id="footer" class="container-fluid d-flex align-items-center justify-content-center bg-dark full-page">
+    <div class="d-flex flex-column">
+        <div class="d-flex flex-row row">
+            <div class="d-flex flex-column col-md-6">
+                <div class="p-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Kde nás nájdete</h4>
+                            <div class="" id="map" style="width: 100%; min-height: 250px;"></div>
+                            <p class="card-text">Fakulta informatiky a informačných technológií<br>Ilkovičova 2<br>842
+                                16
+                                Bratislava</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Sociálne siete</h4>
+                            <a href="#" class="btn btn-outline-blue btn-block">Facebook</a>
+                            <a href="#" class="btn btn-outline-red btn-block">YouTube</a>
+                            <a href="#" class="btn btn-outline-blue-grey btn-block">LinkedIn</a>
 
-    <div class="d-flex flex-row row">
-        <div class="d-flex flex-column col-md-6">
-            <div class="p-2">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Kde nás nájdete</h4>
-                        <div class="" id="map" style="width: 100%; min-height: 250px;"></div>
-                        <p class="card-text">Fakulta informatiky a informačných technológií<br>Ilkovičova 2<br>842 16 Bratislava</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="p-2">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Sociálne siete</h4>
-                        <a href="#" class="btn btn-outline-blue btn-block">Facebook</a>
-                        <a href="#" class="btn btn-outline-red btn-block">YouTube</a>
-                        <a href="#" class="btn btn-outline-blue-grey btn-block">LinkedIn</a>
-
+            <div class="d-flex flex-column col-md">
+                <div class="p-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Kontakt</h4>
+                            <ul class="list-group" style="color: black">
+                                <li class="list-group-item">Telefón<br>+421 2 210 22 204</li>
+                                <li class="list-group-item">E-mail<br>info@fiit.stuba.sk</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="card">
+                        <div class="card-body align-content-center">
+                            <a href="http://ects.stuba.sk" class=""><img style="max-height: 100px"
+                                                                         src="images/ects-gray-stu.png"></a>
+                            <a href="http://ds.stuba.sk" class=""><img style="max-height: 100px"
+                                                                       src="images/ds-gray-stu.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title ">Hromadná doprava</h4>
+                            <ul class="list-group" style="color: black">
+                                <li class="list-group-item">Mlynská dolina<br>31, 39</li>
+                                <li class="list-group-item">Botanická záhrada<br>32, 29, 4, 5, 6, 9</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="d-flex flex-column col-md">
-            <div class="p-2">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title">Kontakt</h4>
-                        <ul class="list-group" style="color: black">
-                            <li class="list-group-item">Telefón<br>+421 2 210 22 204</li>
-                            <li class="list-group-item">E-mail<br>info@fiit.stuba.sk</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="p-2">
-                <div class="card">
-                    <div class="card-body align-content-center">
-                        <a href="http://ects.stuba.sk" class=""><img style="max-height: 100px" src="images/ects-gray-stu.png"></a>
-                        <a href="http://ds.stuba.sk" class=""><img style="max-height: 100px" src="images/ds-gray-stu.png"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="p-2">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="card-title ">Hromadná doprava</h4>
-                        <ul class="list-group" style="color: black">
-                            <li class="list-group-item">Mlynská dolina<br>31, 39</li>
-                            <li class="list-group-item">Botanická záhrada<br>32, 29, 4, 5, 6, 9</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="flex-row flex-center">
+            <a class="btn btn-outline-white pulse_white p-2" style="width: 35px" onclick="tofirst()"><img width="15px"
+                                                                                                          height="15px"
+                                                                                                          src="images/arrows/up_white.svg">
+            </a>
         </div>
     </div>
-
-
-
 </section>
 
 
 <!-- SCRIPTS -->
+<div id="scripts">
+    <!-- JQuery -->
+    <script type="text/javascript" src="mdbootstrap/js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="mdbootstrap/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="mdbootstrap/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="mdbootstrap/js/mdb.min.js"></script>
+    <!-- Scrollify  -->
+    <script type="text/javascript" src="plugins/Scrollify-master/Gruntfile.js"></script>
+    <script type="text/javascript" src="plugins/Scrollify-master/jquery.scrollify.js"></script>
 
-<!-- JQuery -->
-<script type="text/javascript" src="mdbootstrap/js/jquery-3.2.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="mdbootstrap/js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="mdbootstrap/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="mdbootstrap/js/mdb.min.js"></script>
-<!-- Scrollify  -->
-<script type="text/javascript" src="plugins/Scrollify-master/Gruntfile.js"></script>
-<script type="text/javascript" src="plugins/Scrollify-master/jquery.scrollify.js"></script>
-<script type="text/javascript" src="js/ScrollifyCongig.js"></script>
+    <script type="text/javascript" src="js/PluginsConfigs.js"></script>
 
-<script type="text/javascript" src="js/map.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu_EGJ5R26FBggP3tvoOv54CnSmQ189oA&callback=initMap">
-</script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu_EGJ5R26FBggP3tvoOv54CnSmQ189oA&callback=initMap">
+    </script>
+</div>
 </body>
 
 </html>

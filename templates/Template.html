@@ -12,93 +12,93 @@
     <!-- Material Design Bootstrap -->
     <link href="../mdbootstrap/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
-    <link href="../mdbootstrap/css/style.css" rel="stylesheet">
+    <link href="../mdbootstrap/css/custom_styles.css" rel="stylesheet">
 
     <!-- AngjlarJS -->
     <script src="../js/angular/angular.js"></script>
     <script src="../js/angular/angular-route.js"></script>
     <script src="../js/app.js"></script>
 </head>
+
 <body ng-controller="MainCtrl">
+
 <header>
-<div class="container-fluid logoholder" style="background-color: #24a9dc;">
-    <img id="logo" style="max-height: 10vh" src="../images/FIIT_LOGO.svg">
-</div>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="http://fiit.stuba.sk">FIIT</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #24a9dc">
+        <a class="navbar-brand" href="http://fiit.stuba.sk"><img src="../images/stu_napis.svg"
+                                                                 style="width: 35px; height: 100%;"></a>
 
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="../index.html">Domov<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown" ng-class="{active: location === '/' || location === '/odbory/bakalar' ||
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Domov<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown" ng-class="{active: location === '/' || location === '/odbory' || location === '/odbory/bakalar' ||
             location === '/odbory/inzinier'} || location === '/odbory/doktorand'">
-                <a class="nav-link dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true"
-                   aria-expanded="false">Odbory</a>
-                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#!/odbory">Prehľad odborov</a>
-                    <a class="dropdown-item" href="#!/odbory/bakalar">Bakalárske</a>
-                    <a class="dropdown-item" href="#!/odbory/inzinier">Inžinierske</a>
-                    <a class="dropdown-item" href="#!/odbory/doktorand">Doktorandské</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown" ng-class="{active: location === '/prijatie/podmienky' || location === '/prijatie/prihlaska'}">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                   aria-expanded="false">Prijímacie konanie</a>
-                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#!prijatie/podmienky">Podmienky prijatia</a>
-                    <a class="dropdown-item" href="#!prijatie/prihlaska">Prihláška</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" ng-class="{active: location === 'ubytovanieastrava'}" href="#!ubytovanieastrava">Ubytovanie a strava</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" ng-class="{active: location === 'financie'}" href="#!financie">Financovanie</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" ng-class="{active: location === 'vyskum'}" href="#!vyskum">Výskum</a>
-            </li>
-        </ul>
-        <!-- Links -->
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">Odbory</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#!/odbory">Prehľad odborov</a>
+                        <a class="dropdown-item" href="#!/odbory/bakalar">Bakalárske</a>
+                        <a class="dropdown-item" href="#!/odbory/inzinier">Inžinierske</a>
+                        <a class="dropdown-item" href="#!/odbory/doktorand">Doktorandské</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown"
+                    ng-class="{active: location === '/prijatie/podmienky' || location === '/prijatie/prihlaska'}">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">Prijímacie konanie</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#!prijatie/podmienky">Podmienky prijatia</a>
+                        <a class="dropdown-item" href="#!prijatie/prihlaska">Prihláška</a>
+                    </div>
+                </li>
+                <li class="nav-item" ng-class="{active: location === '/ubytovanieastrava'}">
+                    <a class="nav-link" href="#!ubytovanieastrava">Ubytovanie a strava</a>
+                </li>
+                <li class="nav-item" ng-class="{active: location === '/financie'}">
+                    <a class="nav-link" href="#!financie">Financovanie</a>
+                </li>
+                <li class="nav-item" ng-class="{active: location === '/vyskum'}">
+                    <a class="nav-link" href="#!vyskum">Výskum</a>
+                </li>
+            </ul>
+            <!-- Links -->
 
-        <!-- Search form -->
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="text" placeholder="Vyhľadávanie" aria-label="Search">
-            <button class="btn btn-outline-success btn-sm my-0" type="submit"><img height="15px"
-                                                                                   src="../images/lupa.svg"></button>
-        </form>
+            <!-- Search form -->
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="text" placeholder="Vyhľadávanie" aria-label="Search">
+                <button class="btn btn-outline-success btn-sm my-0" type="submit"><img height="15px"
+                                                                                       src="../images/lupa.svg">
+                </button>
+            </form>
 
-        <!-- Language -->
+            <!-- Language -->
 
-        <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                   aria-expanded="false">SK</a>
-                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">SK</a>
-                    <a class="dropdown-item" href="#">EN</a>
-                </div>
-            </li>
-        </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">SK</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">SK</a>
+                        <a class="dropdown-item" href="#">EN</a>
+                    </div>
+                </li>
+            </ul>
 
-    </div>
-</nav>
+        </div>
+    </nav>
 </header>
+
 <ng-view></ng-view>
 
-
-
-<!--Footer-->
 <footer class="page-footer bg-dark center-on-small-only">
 
     <!--Footer Links-->
@@ -113,9 +113,9 @@
                 </ul>
                 <h5 class="title">Sociálne siete</h5>
                 <ul class="">
-                    <li><a href="#" >Facebook</a></li>
-                    <li><a href="#" >YouTube</a></li>
-                    <li><a href="#" >LinkedIn</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">LinkedIn</a></li>
                 </ul>
             </div>
             <!--/.First column-->
@@ -124,7 +124,9 @@
             <div class="col-md-6">
                 <h5 class="title">Kde nás nájdete</h5>
                 <ul>
-                    <li> <div class="" id="map" style="width: 100%; min-height: 250px;"></div></li>
+                    <li>
+                        <div class="" id="map" style="width: 100%; min-height: 250px;"></div>
+                    </li>
                     <li><p class="card-text">Fakulta informatiky a informačných technológií<br>Ilkovičova 2<br>842 16
                         Bratislava</p></li>
                 </ul>
@@ -152,24 +154,22 @@
     <!--/.Copyright-->
 
 </footer>
-<!--/.Footer-->
-
-
 
 <!-- SCRIPTS -->
+<div id="scripts">
+    <!-- JQuery -->
+    <script type="text/javascript" src="../mdbootstrap/js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../mdbootstrap/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../mdbootstrap/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../mdbootstrap/js/mdb.min.js"></script>
 
-<!-- JQuery -->
-<script type="text/javascript" src="../mdbootstrap/js/jquery-3.2.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="../mdbootstrap/js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="../mdbootstrap/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="../mdbootstrap/js/mdb.min.js"></script>
-
-<script type="text/javascript" src="../js/map.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu_EGJ5R26FBggP3tvoOv54CnSmQ189oA&callback=initMap">
-</script>
+    <script type="text/javascript" src="../js/map.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu_EGJ5R26FBggP3tvoOv54CnSmQ189oA&callback=initMap">
+    </script>
+</div>
 </body>
 </html>

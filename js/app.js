@@ -43,4 +43,6 @@ angular.module("fiitSite", ["ngRoute"])
         $rootScope.$on('$routeChangeSuccess', function() {
             $scope.location = $location.path();
         });
+    }).config(function ($locationProvider) {
+        $locationProvider.hashPrefix('!');
     });

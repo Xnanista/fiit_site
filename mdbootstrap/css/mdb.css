@@ -1421,7 +1421,7 @@ a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
 
-.pulse {
+.pulse_black {
   -webkit-animation-name: pulse;
   animation-name: pulse; }
 
