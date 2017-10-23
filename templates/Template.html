@@ -56,14 +56,11 @@
                 <li class="nav-item dropdown"
                     ng-class="{active: location === '/prijatie/podmienky' || location === '/prijatie/prihlaska'}">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                       aria-expanded="false">Prijímacie konanie</a>
+                       aria-expanded="false">Prihláška</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#!prijatie/podmienky">Podmienky prijatia</a>
-                        <a class="dropdown-item" href="#!prijatie/prihlaska">Prihláška</a>
+                        <a class="dropdown-item" href="#!prijatie/prihlaska">Ako sa prihlásiť?</a>
                     </div>
-                </li>
-                <li class="nav-item" ng-class="{active: location === '/ubytovanieastrava'}">
-                    <a class="nav-link" href="#!ubytovanieastrava">Ubytovanie a strava</a>
                 </li>
                 <li class="nav-item" ng-class="{active: location === '/financie'}">
                     <a class="nav-link" href="#!financie">Financovanie</a>
@@ -71,13 +68,16 @@
                 <li class="nav-item" ng-class="{active: location === '/dianie'}">
                     <a class="nav-link" href="#!dianie">Dianie</a>
                 </li>
+                <li class="nav-item" ng-class="{active: location === '/ubytovanieastrava'}">
+                    <a class="nav-link" href="#!ubytovanieastrava">Ubytovanie a strava</a>
+                </li>
             </ul>
             <!-- Links -->
 
             <!-- Search form -->
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="text" placeholder="Vyhľadávanie" aria-label="Search">
-                <button class="btn btn-outline-success btn-sm my-0" type="submit"><img height="15px"
+                <button class="btn btn-sm btn-outline-white my-0" type="submit"><img height="15px"
                                                                                        src="../images/lupa.svg">
                 </button>
             </form>

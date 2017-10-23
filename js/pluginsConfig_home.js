@@ -2,7 +2,7 @@ $(document).ready(function () {
     $.scrollify({
         section : ".full-page",
         easing: "easeOutExpo",
-        scrollSpeed: 1100,
+        scrollSpeed: 700,
         offset : 0,
         scrollbars: true,
         standardScrollElements: "",
