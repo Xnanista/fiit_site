@@ -9,7 +9,7 @@ $(document).ready(function () {
         setHeights: false,
         overflowScroll: true,
         updateHash: false,
-        touchScroll:true
+        touchScroll:false
     });
 
     nextpage = function () {

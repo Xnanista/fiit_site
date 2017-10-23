@@ -34,8 +34,8 @@ angular.module("fiitSite", ["ngRoute"])
             .when("/financie", {
                 templateUrl: "../partials/financie.html"
             })
-            .when("/vyskum", {
-                templateUrl: "../partials/vyskum.html"
+            .when("/dianie", {
+                templateUrl: "../partials/dianie.html"
             })
     })
     .controller('MainCtrl', function ($scope, $rootScope, $location) {
