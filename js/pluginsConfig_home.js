@@ -20,6 +20,10 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $("#intro").offset().top
         }, 1000);
+    };tofirst = function() {
+        $('html, body').animate({
+            scrollTop: $("#intro").offset().top
+        }, 1000);
     };
 
     new WOW().init();

@@ -3,6 +3,12 @@ $(document).on('click', '[data-toggle="lightbox"]', function(event) {
     $(this).ekkoLightbox();
 });
 
+tofirst = function() {
+    $('html, body').animate({
+        scrollTop: $(".breadcrumb").offset().top
+    }, 1000);
+};
+
 function initMap() {
     var FIIT = {lat: 48.153823, lng: 17.071865};
     var map = new google.maps.Map(document.getElementById('map'), {
