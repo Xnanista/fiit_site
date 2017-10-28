@@ -22,6 +22,9 @@ angular.module("fiitSite", ["ngRoute"])
             .when("/odbory/doktorand", {
                 templateUrl: "../partials/odbory_doktorand.html"
             })
+            .when("/odbory/vyskumna_orientacia", {
+                templateUrl: "../partials/odbory_vyskumnaorientacia.html"
+            })
             .when("/prijatie/podmienky", {
                 templateUrl: "../partials/prijatie_podmienky.html"
             })
