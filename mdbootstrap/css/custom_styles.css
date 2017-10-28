@@ -126,9 +126,15 @@
     }
 }
 
-.fiit-color{
+.bg-fiit{
     background-color: #24a9dc;
 }
+
+.text-fiit{
+    color: #24a9dc;
+}
+
+
 .round{
     border-radius: 50%;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="sk" ng-app="fiitSite">
+<html lang="sk" ng-app="fiitSite" ng-controller="MainCtrl">
 <head>
-    <title>FIIT</title>
+    <title>FIIT - {{title}}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -22,10 +22,10 @@
     <script src="../js/app.js"></script>
 </head>
 
-<body ng-controller="MainCtrl">
+<body>
 
 <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fiit-color">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-fiit">
         <a class="navbar-brand" href="http://fiit.stuba.sk"><img src="../images/stu_napis.svg"
                                                                  style="width: 35px; height: 100%;"></a>
 
@@ -43,7 +43,7 @@
                     <a class="nav-link" href="../index.html">Domov<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown" ng-class="{active: location === '/' || location === '/odbory' || location === '/odbory/bakalar' ||
-            location === '/odbory/inzinier'} || location === '/odbory/doktorand'">
+            location === '/odbory/inzinier'} || location === '/odbory/doktorand' || location === '/odbory/vyskumna_orientacia'">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false">Štúdium</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
