@@ -37,6 +37,9 @@ angular.module("fiitSite", ["ngRoute"])
                 templateUrl: "../partials/prijatie_podmienky.html",
                 title: 'Podmienky prijatia'
             })
+            .when("/prijatie/podmienky/sutaze", {
+                templateUrl: "../partials/prijatie_sutaze.html"
+            })
             .when("/prijatie/prihlaska", {
                 templateUrl: "../partials/prijatie_prihlaska.html",
                 title: 'Prihláška'
