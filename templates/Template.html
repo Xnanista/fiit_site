@@ -57,7 +57,7 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown"
-                    ng-class="{active: location === '/prijatie/podmienky' || location === '/prijatie/prihlaska'}">
+                    ng-class="{active: location === '/prijatie/podmienky' || location === '/prijatie/prihlaska' || location === '/prijatie/podmienky/sutaze'}">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false">Prihláška</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
@@ -81,7 +81,7 @@
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="text" placeholder="Vyhľadávanie" aria-label="Search">
                 <button class="btn btn-sm btn-outline-white my-0" type="submit"><img height="15px"
-                                                                                       src="../images/lupa.svg">
+                                                                                     src="../images/lupa.svg">
                 </button>
             </form>
 
@@ -102,7 +102,7 @@
     </nav>
 </header>
 
-<ng-view></ng-view>
+<ng-view autoscroll="true"></ng-view>
 
 <footer class="page-footer bg-dark center-on-small-only">
 
@@ -174,7 +174,6 @@
     </script>
     <script src="../plugins/bootstrap_lightbox/ekko-lightbox.js"></script>
     <script src="../js/pluginsConfig_app.js"></script>
-
     <script src="../js/show_hide_text_toggle.js"></script>
 </div>
 </body>

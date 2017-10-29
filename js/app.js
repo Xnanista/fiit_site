@@ -38,7 +38,8 @@ angular.module("fiitSite", ["ngRoute"])
                 title: 'Podmienky prijatia'
             })
             .when("/prijatie/podmienky/sutaze", {
-                templateUrl: "../partials/prijatie_sutaze.html"
+                templateUrl: "../partials/prijatie_sutaze.html",
+                title: 'Súťaže'
             })
             .when("/prijatie/prihlaska", {
                 templateUrl: "../partials/prijatie_prihlaska.html",
