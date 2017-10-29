@@ -1,6 +1,10 @@
 angular.module("fiitSite", ["ngRoute"])
     .config(function ($routeProvider, $locationProvider) {
         $routeProvider
+            .otherwise({
+                templateUrl: "../partials/default.html",
+                title: 'Blúdny holanďan'
+            })
             .when("/odbory", {
                 templateUrl: "../partials/odbory.html",
                 title: 'Prehľad odborov'
