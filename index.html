@@ -104,6 +104,7 @@
     </nav>
 </header>
 <!--Main Layout-->
+
 <!--
 <section id="intro" class="container-fluid d-flex align-items-center justify-content-center full-page"
          style="background: url('images/intro_fiit.svg')">
@@ -124,11 +125,12 @@
         </div>
     </div>
 </section> -->
-<div id="intro" class="container-fluid view hm-stylish-strong full-page" style="background: url('images/intro_fiit.svg');  background-size:cover;">
+<section id="intro" class="container-fluid view hm-stylish-strong full-page"
+     style="background: url('images/intro_fiit.svg') center;  background-size:cover;">
     <div class="mask flex-center">
         <div class="row mt-5">
             <div class="col-md-12 wow fadeIn mb-3">
-                <div class="intro-info-content text-center text-white">
+                <div class="intro-info-content text-center text-white m-4">
                     <h1 class="display-1 font-bold mb-2 wow fadeInDown" data-wow-delay="0.4s">VITAJ</h1>
                     <h5 class="display-4 font-up mb-3 mt-1 wow fadeInDown" data-wow-delay="1.5s">VO SVETE IT</h5>
                     <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="2s">
@@ -142,8 +144,9 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
+<!--
 <section id="video" class="container-fluid d-flex align-items-center justify-content-center full-page">
     <div class="flex-column">
         <div class=" display-2 flex-center nav-margin">
@@ -160,6 +163,30 @@
         </div>
     </div>
 
+</section>-->
+<section id="video" class="view hm-stylish-strong full-page">
+    <div id="video-overlay" class="mask flex-center">
+        <div class="row mt-5">
+            <div class="col-md-12  mb-3">
+                <div class="intro-info-content text-center text-white m-4">
+                    <h1 class="display-2 font-bold mb-2">Pozri sa ku nám</h1>
+                    <h4 class=" font-up mb-3 mt-1">naša fakulta nie je ako žiadna iná</h4>
+                    <a id="play-video" class="btn btn-outline-white p-2"
+                       onclick=""><i class="fa fa-play" aria-hidden="true"></i> To chcem vidieť
+
+                    </a>
+                    <p></p>
+                    <a class="btn btn-outline-white pulse_white p-2 mt-4"
+                       onclick="nextpage()"><img height="15px"
+                                                 src="images/arrows/down_white.svg">
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe id="y-video" scrolling="auto" allowtransparency="true" allowfullscreen style="min-width:100%;min-height:100vh;"
+            src="https://www.youtube.com/embed/4JbPBcoOO9I?rel=0&showinfo=0"></iframe>
 </section>
 
 <section id="compare" class="container d-flex align-items-center justify-content-center full-page">
@@ -312,49 +339,8 @@
     </div>
 </section>
 
-<div id="about" class="container-fluid view hm-stylish-light full-page" style="background: url('images/fiit_intro.svg'); background-size: cover;">
-    <div class="mask flex-center">
-        <div class="row mt-5">
-            <div class="col-md-12 wow fadeIn mb-3">
-                <div class="flex-column">
-                    <div class="row display-2 flex-center nav-margin">
-                        <p class="font-up font-bold white-text text-center">A kto sme?</p>
-                    </div>
-                    <div class="flex-row m-4">
-                        <div class="text-center p-4 z-depth-1-half white">
-                            <p>Fakulta informatiky a informačných technológií (FIIT) je jednou zo siedmich fakúlt Slovenskej
-                                technickej univerzity v Bratislave (STU). FIIT STU pokrýva komplexne oblasť informatiky a
-                                informačných technológií (IIT) vo výskume a vzdelávaní. Je prvou fakultou na Slovensku s takýmto
-                                poslaním. Napriek tomu, že ide o fakultu novú, STU má vo vzdelávaní a výskume v oblasti IIT
-                                dlhodobé skúsenosti a dosiahla celý rad významných výsledkov.</p>
-                            <hr class="hr-dark">
-                            <p>Vznikla v roku 2003 na základe požiadaviek trhu a časť jej študijného programu je tvorená priamo
-                                s partnerskými organizáciami. Základom pre vznik FIIT bolo pracovisko (Katedra informatiky a
-                                výpočtovej techniky), ktoré do vzniku FIIT zabezpečovalo vzdelávanie a výskum v oblasti IIT na
-                                STU (v rámci FEI STU).</p>
-                            <hr class="hr-dark">
-                            <p>V súčasnosti vychováva viac ako tisícku študentov v troch stupňoch štúdia (bakalárske,
-                                inžinierske, doktorandské). Letný semester akademického roka 2012/13 otvorila v novopostavenej
-                                budove v Mlynskej doline, kde pokračuje v budovaní centra výskumu a vzdelávania v informačných a
-                                komunikačných technológiách na Slovensku.</p>
-
-                            <p>Naši absolventi patria medzi najlepšie zarábajúcich absolventov s istotou zamestnania.</p>
-                        </div>
-                    </div>
-                    <div class="flex-row row flex-center mt-4">
-                        <a class="btn btn-outline-white pulse_white p-2" onclick="nextpage()"><img height="15px"
-                                                                                                   src="images/arrows/down_white.svg">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--
 <section id="about" class="container-fluid d-flex align-items-center justify-content-center full-page"
-         style="background: url('images/FIIT_L.jpg') no-repeat center; background-size: 100% 100%;">
+         style="background: url('images/FIIT_L.jpg') no-repeat center; background-size: cover">
     <div class="flex-column">
         <div class="row display-2 flex-center nav-margin">
             <p class="font-up font-bold white-text text-center">A kto sme?</p>
@@ -386,7 +372,7 @@
             </a>
         </div>
     </div>
-</section>-->
+</section>
 
 <section id="footer" class="container-fluid d-flex align-items-center justify-content-center bg-dark full-page">
     <div class="flex-column">
@@ -474,6 +460,16 @@
 
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu_EGJ5R26FBggP3tvoOv54CnSmQ189oA&callback=initMap">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#play-video').on('click', function (ev) {
+                $("#video-overlay").addClass("invisible");
+                $("#y-video")[0].src += "&autoplay=1";
+                ev.preventDefault();
+
+            });
+        });
     </script>
 </div>
 </body>

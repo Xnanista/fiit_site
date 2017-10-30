@@ -21,13 +21,14 @@ $(document).ready(function () {
             scrollTop: $("#intro").offset().top
         }, 1000);
     };
-    tofirst = function () {
-        $('html, body').animate({
-            scrollTop: $("#intro").offset().top
-        }, 1000);
-    };
 
     new WOW().init();
+    $('#play-video').on('click', function (ev) {
+        $("#video-overlay").addClass("invisible");
+        $("#y-video")[0].src += "&autoplay=1";
+        ev.preventDefault();
+
+    });
 });
 
 initMap = function () {
