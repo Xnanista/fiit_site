@@ -71,5 +71,23 @@ angular.module("fiitSite", ["ngRoute"])
                 $scope.title = current.$$route.title;
             }
         });
+        $rootScope.$on('$routeChangeStart', function (event, current, previous) {
+            if (previous && previous.hasOwnProperty('$$route')) {
+                $scope.lastRoute = '#!'+ previous.$$route.originalPath;
+            }
+        });
+
+        $scope.vyhladaj = function () {
+            var input = $('#vy').val();
+            $('#vy').val('');
+            $('#obsah').find('option').filter(function(){
+                if(this.value.toUpperCase().indexOf(input.toUpperCase()) !== -1){
+                    $location.path(this.id);
+                }
+            })
+        };
+
+
+
     });
 

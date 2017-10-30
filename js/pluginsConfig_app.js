@@ -9,7 +9,7 @@ tofirst = function() {
     }, 1000);
 };
 
-function initMap() {
+initMap = function(){
     var FIIT = {lat: 48.153823, lng: 17.071865};
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 16,

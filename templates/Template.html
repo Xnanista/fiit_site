@@ -79,11 +79,19 @@
 
             <!-- Search form -->
             <form class="form-inline">
-                <input class="form-control mr-sm-2" type="text" placeholder="Vyhľadávanie" aria-label="Search">
-                <button class="btn btn-sm btn-outline-white my-0" type="submit"><img height="15px"
-                                                                                     src="../images/lupa.svg">
+                <input class="form-control mr-sm-2" type="text" placeholder="Vyhľadávanie" aria-label="Search"
+                       list="obsah" id="vy" autocomplete="off">
+                <button class="btn btn-sm btn-outline-white my-0" ng-click="vyhladaj()" type="submit"><img height="15px"
+                                                                                                           src="../images/lupa.svg">
                 </button>
             </form>
+            <datalist id="obsah">
+                <option id="/dianie" value="Dianie na fakulte"></option>
+                <option id="/prijatie/prihlaska" value="Prihláška"></option>
+                <option id="/ubytovanieastrava" value="Internát"></option>
+                <option id="/odbory/bakalar/informatika" value="Informatika"></option>
+                <option id="/odbory/vyskumna_orientacia" value="Výskumná orientácia"></option>
+            </datalist>
 
             <!-- Language -->
 
