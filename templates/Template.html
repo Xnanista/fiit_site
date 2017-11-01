@@ -74,13 +74,16 @@
                 <li class="nav-item" ng-class="{active: location === '/ubytovanieastrava'}">
                     <a class="nav-link" href="#!ubytovanieastrava">Ubytovanie a strava</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="tolast()">Kontakt</a>
+                </li>
             </ul>
             <!-- Links -->
 
             <!-- Search form -->
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="text" placeholder="Vyhľadávanie" aria-label="Search"
-                       list="obsah" id="vy" autocomplete="off">
+                       list="obsah" id="search" autocomplete="off">
                 <button class="btn btn-sm btn-outline-white my-0" ng-click="vyhladaj()" type="submit"><img height="15px"
                                                                                                            src="../images/lupa.svg">
                 </button>
@@ -112,7 +115,7 @@
 
 <ng-view autoscroll="true"></ng-view>
 
-<footer class="page-footer bg-dark center-on-small-only">
+<footer id="footer" class="page-footer bg-dark center-on-small-only">
 
     <!--Footer Links-->
     <div class="container">

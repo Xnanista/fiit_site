@@ -14,6 +14,7 @@
     <link href="mdbootstrap/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="mdbootstrap/css/custom_styles.css" rel="stylesheet">
+    <link href="plugins/section-scroll-master/section-scroll.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Domov<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" onclick="tofirst()">Domov<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
@@ -68,6 +69,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="templates/Template.html#!ubytovanieastrava">Ubytovanie a strava</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="tolast()">Kontakt</a>
+                </li>
             </ul>
             <!-- Links -->
 
@@ -75,8 +79,9 @@
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="text" placeholder="Vyhľadávanie" aria-label="Search"
                        list="obsah" id="vy" autocomplete="off">
-                <button class="btn btn-sm btn-outline-white my-0" onclick="vyhladaj()" type="submit"><img height="15px"
-                                                                                                          src="images/lupa.svg">
+                <button id="search-button" class="btn btn-sm btn-outline-white my-0" onclick="" type="submit"><img
+                        height="15px"
+                        src="images/lupa.svg">
                 </button>
             </form>
             <datalist id="obsah">
@@ -125,22 +130,25 @@
         </div>
     </div>
 </section> -->
-<section id="intro" class="container-fluid view hm-stylish-strong full-page"
-     style="background: url('images/intro_fiit.svg') center;  background-size:cover;">
+<section id="intro" class="scrollable-section slide container-fluid view hm-stylish-strong full-page"
+         data-section-title="privítanie"
+         style="background: url('images/intro_fiit.svg') center;  background-size:cover;">
     <div class="mask flex-center">
-        <div class="row mt-5">
-            <div class="col-md-12 wow fadeIn mb-3">
-                <div class="intro-info-content text-center text-white m-4">
-                    <h1 class="display-1 font-bold mb-2 wow fadeInDown" data-wow-delay="0.4s">VITAJ</h1>
-                    <h5 class="display-4 font-up mb-3 mt-1 wow fadeInDown" data-wow-delay="1.5s">VO SVETE IT</h5>
-                    <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="2s">
-                    <h4 class="wow fadeInDown" data-wow-delay="2s">Fakulta informatiky a informačných technológií</h4>
-                    <a class="btn btn-outline-white pulse_white p-2 wow fadeInDown" data-wow-delay="2s"
-                       onclick="nextpage()"><img height="15px"
-                                                 src="images/arrows/down_white.svg">
-
-                    </a>
+        <div class="d-flex flex-column flex-center wow fadeIn" style="min-height: 80vh; ">
+            <div class="mt-auto"></div>
+            <div class="text-white text-center p-4 mt-5" style="border-style: solid;">
+                <h1 class="display-1 font-bold mb-2 wow fadeInDown text-shadow-light" data-wow-delay="0.4s">VITAJ</h1>
+                <h5 class="display-4 font-up mb-3 mt-1 wow fadeInDown text-shadow-light" data-wow-delay="1.5s">VO SVETE
+                    IT</h5>
+                <div class="flex-center justify-content-center">
+                    <img class="align-content-center" style="max-width: 30px" src="images/fiit_napis.svg">
                 </div>
+            </div>
+            <div class="mb-auto"></div>
+            <div class="p-2">
+                <a class="btn btn-outline-white pulse_white p-2 mt-4"
+                   onclick="nextpage()"><img width="15px" src="images/arrows/down_white.svg">
+                </a>
             </div>
         </div>
     </div>
@@ -164,35 +172,55 @@
     </div>
 
 </section>-->
-<section id="video" class="view hm-stylish-strong full-page">
+<section id="video" class="scrollable-section slide view hm-stylish-strong full-page" data-section-title="video">
     <div id="video-overlay" class="mask flex-center">
-        <div class="row mt-5">
-            <div class="col-md-12  mb-3">
-                <div class="intro-info-content text-center text-white m-4">
-                    <h1 class="display-2 font-bold mb-2">Pozri sa ku nám</h1>
-                    <h4 class=" font-up mb-3 mt-1">naša fakulta nie je ako žiadna iná</h4>
-                    <a id="play-video" class="btn btn-outline-white p-2"
-                       onclick=""><i class="fa fa-play" aria-hidden="true"></i> To chcem vidieť
+        <div class="d-flex flex-column flex-center" style="min-height: 80vh;">
+            <div class="mt-auto"></div>
+            <div class="text-white text-center p-2">
+                <h1 class="display-2 font-bold mb-2 text-shadow-light">Pozri sa ku nám</h1>
+                <h4 class=" font-up mb-3 mt-1">naša fakulta nie je ako žiadna iná</h4>
+                <a class="btn btn-outline-white p-2"
+                   onclick="play_youtube()"><i class="fa fa-play" aria-hidden="true"></i> To chcem vidieť
 
-                    </a>
-                    <p></p>
-                    <a class="btn btn-outline-white pulse_white p-2 mt-4"
-                       onclick="nextpage()"><img height="15px"
-                                                 src="images/arrows/down_white.svg">
+                </a>
+            </div>
+            <div class="mb-auto"></div>
+            <div class=" p-2">
+                <a class="btn btn-outline-white pulse_white p-2 mb-2"
+                   onclick="nextpage()"><img height="15px"
+                                             src="images/arrows/down_white.svg">
 
-                    </a>
-                </div>
+                </a>
             </div>
         </div>
     </div>
-    <iframe id="y-video" scrolling="auto" allowtransparency="true" allowfullscreen style="min-width:100%;min-height:100vh;"
-            src="https://www.youtube.com/embed/4JbPBcoOO9I?rel=0&showinfo=0"></iframe>
+    <div id="after-video-overlay" class="mask flex-center invisible">
+        <div class="d-flex flex-column flex-center" style="min-height: 80vh;">
+            <div class="mt-auto"></div>
+            <div class="text-white text-center p-2">
+                <h1 class="display-2 font-bold mb-2 text-shadow-light">Tak čo na to hovoríš?</h1>
+                <h4 class=" font-up mb-3 mt-1">jedine paráda!</h4>
+                <a class="btn btn-outline-white p-2"
+                   onclick="play_youtube()"><i class="fa fa-play" aria-hidden="true"></i> Neverím vlastným očiam
+                </a>
+            </div>
+            <div class="mb-auto"></div>
+            <div class=" p-2">
+                <a class="btn btn-outline-white pulse_white p-2 mb-2"
+                   onclick="nextpage()"><img height="15px"
+                                             src="images/arrows/down_white.svg">
+
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="player" style="min-width:100%;min-height:100vh;"></div>
 </section>
 
-<section id="compare" class="container d-flex align-items-center justify-content-center full-page">
+<section id="compare" class="scrollable-section slide container full-page" data-section-title="prečo my">
     <div class="d-flex flex-column">
         <div class="row display-2 flex-center nav-margin">
-            <p class="font-up font-bold">Prečo byť fiit</p>
+            <p class=" font-up font-bold">Prečo byť fiit</p>
         </div>
         <div class="card-deck">
             <div class="card m-3">
@@ -251,7 +279,7 @@
                 </div>
             </div>
         </div>
-        <div class="card-deck">
+        <div class="card-deck mb-auto">
             <div class="card m-3">
                 <div class="card-header text-center bg-dark white-text">
                     7. Výskum
@@ -288,11 +316,14 @@
     </div>
 </section>
 
-<section id="studies" class="container d-flex align-items-center justify-content-center full-page">
-    <div class="flex-column text-center">
+<section id="studies"
+         class="scrollable-section slide container d-flex align-items-center justify-content-center full-page"
+         data-section-title="štúdiá">
+    <div class="d-flex flex-column text-center">
         <div class="flex-row display-2 flex-center flex-wrap nav-margin">
             <p class="font-up font-bold">Kam sa mám hlásiť?</p>
         </div>
+        <div class="mt-auto"></div>
         <div class="card-deck">
             <div class="card m-3">
                 <img class="img-fluid" src="images/studia/b.svg">
@@ -331,7 +362,8 @@
                 </div>
             </div>
         </div>
-        <div class="row flex-row flex-center mt-4">
+        <div class="mb-auto"></div>
+        <div class="p-2">
             <a class="btn btn-outline-black pulse_black p-2" onclick="nextpage()"><img height="15px"
                                                                                        src="images/arrows/down.svg">
             </a>
@@ -339,7 +371,9 @@
     </div>
 </section>
 
-<section id="about" class="container-fluid d-flex align-items-center justify-content-center full-page"
+<section id="about"
+         class="scrollable-section slide container-fluid d-flex align-items-center justify-content-center full-page"
+         data-section-title="o nás"
          style="background: url('images/FIIT_L.jpg') no-repeat center; background-size: cover">
     <div class="flex-column">
         <div class="row display-2 flex-center nav-margin">
@@ -367,14 +401,16 @@
             </div>
         </div>
         <div class="flex-row row flex-center mt-4">
-            <a class="btn btn-outline-black pulse_black p-2" onclick="nextpage()"><img height="15px"
-                                                                                       src="images/arrows/down.svg">
+            <a class="btn btn-outline-white pulse_white p-2" onclick="nextpage()"><img height="15px"
+                                                                                       src="images/arrows/down_white.svg">
             </a>
         </div>
     </div>
 </section>
 
-<section id="footer" class="container-fluid d-flex align-items-center justify-content-center bg-dark full-page">
+<section id="footer"
+         class=" scrollable-section slide container-fluid d-flex align-items-center justify-content-center bg-dark full-page"
+         data-section-title="kontakt">
     <div class="flex-column">
         <div class="row display-2 flex-center nav-margin">
             <p class="font-up font-bold white-text text-center">Ešte niečo?</p>
@@ -455,22 +491,16 @@
     <!-- Scrollify  -->
     <script type="text/javascript" src="plugins/Scrollify-master/jquery.scrollify.js"></script>
 
-    <script type="text/javascript" src="js/pluginsConfig_home.js"></script>
+    <script src="http://www.youtube.com/player_api"></script>
 
+    <script type="text/javascript" src="js/pluginsConfig_home.js"></script>
 
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu_EGJ5R26FBggP3tvoOv54CnSmQ189oA&callback=initMap">
     </script>
-    <script>
-        $(document).ready(function () {
-            $('#play-video').on('click', function (ev) {
-                $("#video-overlay").addClass("invisible");
-                $("#y-video")[0].src += "&autoplay=1";
-                ev.preventDefault();
 
-            });
-        });
-    </script>
+    <script type="text/javascript" src="plugins/section-scroll-master/jquery.section-scroll.js"></script>
+
 </div>
 </body>
 </html>

@@ -73,21 +73,20 @@ angular.module("fiitSite", ["ngRoute"])
         });
         $rootScope.$on('$routeChangeStart', function (event, current, previous) {
             if (previous && previous.hasOwnProperty('$$route')) {
-                $scope.lastRoute = '#!'+ previous.$$route.originalPath;
+                $scope.lastRoute = '#!' + previous.$$route.originalPath;
             }
         });
 
         $scope.vyhladaj = function () {
-            var input = $('#vy').val();
-            $('#vy').val('');
-            $('#obsah').find('option').filter(function(){
-                if(this.value.toUpperCase().indexOf(input.toUpperCase()) !== -1){
-                    $location.path(this.id);
+            var input = document.getElementById('search');
+            if (input.value.length > 0) {
+                var options = document.getElementById("obsah").options;
+                for (i = 0; i < options.length; i++) {
+                    if (options[i].value.toUpperCase().indexOf(input.value.toUpperCase()) !== -1) {
+                        $location.path(options[i].id);
+                    }
                 }
-            })
+            }
         };
-
-
-
     });
 
