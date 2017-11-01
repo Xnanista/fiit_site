@@ -1,10 +1,9 @@
 .bullets-container {
-    display: table;
     position: fixed;
     right: 0;
-    height: 100%;
-    z-index: 900;
+    z-index: 895;
     font-weight: normal;
+    margin-top: 40vh;
 }
 
 .section-bullets {
