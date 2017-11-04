@@ -33,3 +33,17 @@ $(function(){
         navMain.collapse('hide');
     });
 });
+
+function changeIcon(button) {
+    var element = button.children[0];
+    if (button.dataset.state === "show") {
+        element.classList.remove("fa-chevron-circle-up");
+        element.classList.add("fa-chevron-circle-down");
+        button.dataset.state = "hide";
+    }
+    else {
+        element.classList.remove("fa-chevron-circle-down");
+        element.classList.add("fa-chevron-circle-up");
+        button.dataset.state = "show";
+    }
+};
