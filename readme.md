@@ -9,7 +9,7 @@
 ### Autori
 
 - Boris Naništa
-- Peter Pápaj
+- Peter Pápay
 - Davis Pavelka
 - Lukáš Odler
 - Jakub Sedláž
