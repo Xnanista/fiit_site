@@ -17,7 +17,7 @@ angular.module("fiitSite", ["ngRoute"])
                 templateUrl: "../partials/odbory_bakalar_informatika.html",
                 title: 'Bakalár - Informatika'
             })
-            .when("/odbory/bakalar/infomacna_bezpecnost", {
+            .when("/odbory/bakalar/informacna_bezpecnost", {
                 templateUrl: "../partials/odbory_bakalar_informacnabezpecnost.html",
                 title: 'Bakalár - Informačná bezpečnosť'
             })
