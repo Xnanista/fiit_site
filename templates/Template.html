@@ -14,7 +14,7 @@
     <!-- Your custom styles (optional) -->
     <link href="../mdbootstrap/css/custom_styles.css" rel="stylesheet">
 
-    <link href="../plugins/bootstrap_lightbox/ekko-lightbox.css" rel="stylesheet">
+    <link href="../js/plugins/bootstrap_lightbox/ekko-lightbox.css" rel="stylesheet">
     <link href="../mdbootstrap/css/stepper.css" rel="stylesheet">
 
     <!-- AngjlarJS -->
@@ -27,8 +27,8 @@
 
 <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-fiit">
-        <a class="navbar-brand" href="http://fiit.stuba.sk"><img src="../images/stu_napis.svg"
-                                                                 style="width: 35px; height: 100%;"></a>
+        <div class="navbar-brand"><img src="../images/stu_napis.svg"
+                                                          style="width: 35px; height: 100%;"></div>
 
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -85,8 +85,8 @@
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="text" placeholder="Vyhľadávanie" aria-label="Search"
                        list="obsah" id="search" autocomplete="off">
-                <button class="btn btn-sm btn-outline-white my-0" ng-click="vyhladaj()" type="submit"><img height="15px"
-                                                                                                           src="../images/lupa.svg">
+                <button class="btn btn-sm btn-outline-white my-0" ng-click="vyhladaj()" type="submit"><i
+                        class="fa fa-search" aria-hidden="true"></i>
                 </button>
             </form>
             <datalist id="obsah">
@@ -103,9 +103,10 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false">SK</a>
-                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">SK</a>
-                        <a class="dropdown-item" href="#">EN</a>
+                    <div class="dropdown-menu dropdown-primary dropdown-menu-right"
+                         aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item">SK</a>
+                        <a class="dropdown-item">EN</a>
                     </div>
                 </li>
             </ul>
@@ -189,7 +190,7 @@
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu_EGJ5R26FBggP3tvoOv54CnSmQ189oA&callback=initMap">
     </script>
-    <script src="../plugins/bootstrap_lightbox/ekko-lightbox.min.js"></script>
+    <script src="../js/plugins/bootstrap_lightbox/ekko-lightbox.min.js"></script>
     <script src="../js/pluginsConfig_app.js"></script>
 </div>
 </body>

@@ -14,15 +14,15 @@
     <link href="mdbootstrap/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="mdbootstrap/css/custom_styles.css" rel="stylesheet">
-    <link href="plugins/section-scroll-master/section-scroll.css" rel="stylesheet">
+    <link href="js/plugins/section-scroll-master/section-scroll.css" rel="stylesheet">
 </head>
 
 <body>
 <!--Main Navigation-->
 <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-fiit">
-        <a class="navbar-brand" href="http://fiit.stuba.sk"><img src="images/stu_napis.svg"
-                                                                 style="width: 35px; height: 100%;"></a>
+        <div class="navbar-brand"><img src="images/stu_napis.svg"
+                                                         style="width: 35px; min-height: 100%;"></div>
 
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -79,9 +79,8 @@
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="text" placeholder="Vyhľadávanie" aria-label="Search"
                        list="obsah" id="vy" autocomplete="off">
-                <button id="search-button" class="btn btn-sm btn-outline-white my-0" onclick="" type="submit"><img
-                        height="15px"
-                        src="images/lupa.svg">
+                <button id="search-button" class="btn btn-sm btn-outline-white my-0" onclick="" type="submit"><i
+                        class="fa fa-search" aria-hidden="true"></i>
                 </button>
             </form>
             <datalist id="obsah">
@@ -98,9 +97,25 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false">SK</a>
-                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">SK</a>
-                        <a class="dropdown-item" href="#">EN</a>
+                    <div class="dropdown-menu dropdown-primary dropdown-menu-right"
+                         aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" >SK</a>
+                        <a class="dropdown-item" >EN</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false"><i class="fa fa-gear" aria-hidden="true"></i></a>
+                    <div class="dropdown-menu dropdown-primary dropdown-menu-right"
+                         aria-labelledby="navbarDropdownMenuLink">
+                        <a onclick="$.scrollify.enable()"
+                           class="dropdown-item"><i class="fa fa-power-off" aria-hidden="true"></i>
+                            Zapnúť stránkovanie</a>
+                        <a onclick="$.scrollify.disable()"
+                           class="dropdown-item"><i class="fa fa-power-off" aria-hidden="true"></i>
+                            Vypnúť stránkovanie</a>
                     </div>
                 </li>
             </ul>
@@ -109,27 +124,6 @@
     </nav>
 </header>
 <!--Main Layout-->
-
-<!--
-<section id="intro" class="container-fluid d-flex align-items-center justify-content-center full-page"
-         style="background: url('images/intro_fiit.svg')">
-    <div class="full-bg-img">
-        <div class="row mt-5">
-            <div class="col-md-12 wow fadeIn mb-3">
-                <div class="intro-info-content text-center">
-                    <h1 class="display-1 font-bold mb-2 wow fadeInDown" data-wow-delay="0.4s">VITAJ</h1>
-                    <h5 class="display-4 font-up mb-3 mt-1 wow fadeInDown" data-wow-delay="1.5s">VO SVETE IT</h5>
-                    <hr class="hr-dark mt-4 wow fadeInDown" data-wow-delay="2s">
-                    <h4 class="wow fadeInDown" data-wow-delay="2s">Fakulta informatiky a informačných technológií</h4>
-                    <a class="btn btn-outline-black pulse_black p-2 wow fadeInDown" data-wow-delay="2s"
-                       onclick="nextpage()"><img height="15px"
-                                                 src="images/arrows/down.svg">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
 <section id="intro" class="scrollable-section slide container-fluid view hm-stylish-strong full-page"
          data-section-title="privítanie"
          style="background: url('images/intro_fiit.svg') center;  background-size:cover;">
@@ -137,8 +131,8 @@
         <div class="d-flex flex-column flex-center wow fadeIn" style="min-height: 80vh; ">
             <div class="mt-auto"></div>
             <div class="text-white text-center p-4 mt-5" style="border-style: solid;">
-                <h1 class="display-1 font-bold mb-2 wow fadeInDown text-shadow-light" data-wow-delay="0.4s">VITAJ</h1>
-                <h5 class="display-4 font-up mb-3 mt-1 wow fadeInDown text-shadow-light" data-wow-delay="1.5s">VO SVETE
+                <h1 class="display-1 font-bold mb-2 wow fadeInDown text-reised-shadow" data-wow-delay="0.4s">VITAJ</h1>
+                <h5 class="display-4 font-up mb-3 mt-1 wow fadeInDown text-reised-shadow" data-wow-delay="1.5s">VO SVETE
                     IT</h5>
                 <div class="flex-center justify-content-center">
                     <img class="align-content-center" style="max-width: 30px" src="images/fiit_napis.svg">
@@ -154,30 +148,12 @@
     </div>
 </section>
 
-<!--
-<section id="video" class="container-fluid d-flex align-items-center justify-content-center full-page">
-    <div class="flex-column">
-        <div class=" display-2 flex-center nav-margin">
-            <p class="font-up font-bold text-center">Pozri sa ku nám</p>
-        </div>
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/4JbPBcoOO9I"
-                    allowfullscreen></iframe>
-        </div>
-        <div class="flex-row flex-center mt-4">
-            <a class="btn btn-outline-black pulse_black p-2" onclick="nextpage()"><img height="15px"
-                                                                                       src="images/arrows/down.svg">
-            </a>
-        </div>
-    </div>
-
-</section>-->
 <section id="video" class="scrollable-section slide view hm-stylish-strong full-page" data-section-title="video">
     <div id="video-overlay" class="mask flex-center">
         <div class="d-flex flex-column flex-center" style="min-height: 80vh;">
             <div class="mt-auto"></div>
             <div class="text-white text-center p-2">
-                <h1 class="display-2 font-bold mb-2 text-shadow-light">Pozri sa ku nám</h1>
+                <h1 class="display-2 font-bold mb-2 text-reised-shadow">Pozri sa ku nám</h1>
                 <h4 class=" font-up mb-3 mt-1">naša fakulta nie je ako žiadna iná</h4>
                 <a class="btn btn-outline-white p-2"
                    onclick="play_youtube()"><i class="fa fa-play" aria-hidden="true"></i> To chcem vidieť
@@ -198,10 +174,10 @@
         <div class="d-flex flex-column flex-center" style="min-height: 80vh;">
             <div class="mt-auto"></div>
             <div class="text-white text-center p-2">
-                <h1 class="display-2 font-bold mb-2 text-shadow-light">Tak čo na to hovoríš?</h1>
+                <h1 class="display-2 font-bold mb-2 text-reised-shadow">Tak čo na to hovoríš?</h1>
                 <h4 class=" font-up mb-3 mt-1">jedine paráda!</h4>
                 <a class="btn btn-outline-white p-2"
-                   onclick="play_youtube()"><i class="fa fa-play" aria-hidden="true"></i> Neverím vlastným očiam
+                   onclick="play_youtube()"><i class="fa fa-rotate-left" aria-hidden="true"></i> Neverím vlastným očiam
                 </a>
             </div>
             <div class="mb-auto"></div>
@@ -489,7 +465,7 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="mdbootstrap/js/mdb.min.js"></script>
     <!-- Scrollify  -->
-    <script type="text/javascript" src="plugins/Scrollify-master/jquery.scrollify.js"></script>
+    <script type="text/javascript" src="js/plugins/Scrollify-master/jquery.scrollify.js"></script>
 
 
     <script type="text/javascript" src="js/pluginsConfig_home.js"></script>
@@ -498,7 +474,7 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu_EGJ5R26FBggP3tvoOv54CnSmQ189oA&callback=initMap">
     </script>
 
-    <script type="text/javascript" src="plugins/section-scroll-master/jquery.section-scroll.js"></script>
+    <script type="text/javascript" src="js/plugins/section-scroll-master/jquery.section-scroll.js"></script>
 
 </div>
 </body>

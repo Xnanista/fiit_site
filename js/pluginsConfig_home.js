@@ -20,7 +20,6 @@ $(document).ready(function () {
         topOffset: 0,
         easing: ''
     });
-
     new WOW().init();
 });
 
