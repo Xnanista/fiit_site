@@ -2,24 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e56bcba1-f8d9-4a4e-be43-aae06c5fc51c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/partials/prijimacie_konanie.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/partials/odbory_bakalar.html" afterPath="$PROJECT_DIR$/partials/odbory/bakalar/bakalar_home.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/partials/odbory_bakalar_informacnabezpecnost.html" afterPath="$PROJECT_DIR$/partials/odbory/bakalar/informacnabezpecnost.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/partials/odbory_bakalar_informatika.html" afterPath="$PROJECT_DIR$/partials/odbory/bakalar/informatika.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/partials/odbory_bakalar_internetovetechnologie.html" afterPath="$PROJECT_DIR$/partials/odbory/bakalar/internetovetechnologie.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/partials/odbory_doktorand.html" afterPath="$PROJECT_DIR$/partials/odbory/doktorand/doktorand_home.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/partials/odbory_inzinier.html" afterPath="$PROJECT_DIR$/partials/odbory/inzinier/inzinier_home.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/partials/odbory_vyskumnaorientacia.html" afterPath="$PROJECT_DIR$/partials/odbory/vyskumnaorientacia.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/partials/prijatie_podmienky.html" afterPath="$PROJECT_DIR$/partials/prijatie/podmienky.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/partials/prijatie_prihlaska.html" afterPath="$PROJECT_DIR$/partials/prijatie/prihlaska.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/partials/prijatie_sutaze.html" afterPath="$PROJECT_DIR$/partials/prijatie/sutaze.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/partials/odbory_odbory_bakalar_home.html" afterPath="$PROJECT_DIR$/partials/odbory_bakalar_home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/studia/b.svg" afterPath="$PROJECT_DIR$/images/studia/b.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/studia/d.svg" afterPath="$PROJECT_DIR$/images/studia/d.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/studia/i.svg" afterPath="$PROJECT_DIR$/images/studia/i.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/Template.html" afterPath="$PROJECT_DIR$/templates/Template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mdbootstrap/css/custom_styles.css" afterPath="$PROJECT_DIR$/mdbootstrap/css/custom_styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/odbory.html" afterPath="$PROJECT_DIR$/partials/odbory.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/ubytovanie_strava.html" afterPath="$PROJECT_DIR$/partials/ubytovanie_strava.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,31 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pluginsConfig_home.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/pluginsConfig_home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-              <folding>
-                <element signature="n#!!block;n#nextpage#0" expanded="false" />
-                <element signature="n#!!block;n#tofirst#0" expanded="false" />
-                <element signature="n#!!block;n#tolast#0" expanded="false" />
-                <element signature="n#!!block;n#onYouTubePlayerAPIReady#0" expanded="false" />
-                <element signature="n#!!block;n#play_youtube#0" expanded="false" />
-                <element signature="n#!!block;n#onPlayerStateChange#0" expanded="false" />
-                <element signature="n#!!block;n#initMap#0" expanded="false" />
-                <element signature="e#1995#2430#0" expanded="false" />
-                <element signature="e#2446#2600#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Template.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="197" column="7" lean-forward="false" selection-start-line="197" selection-start-column="7" selection-end-line="197" selection-end-column="7" />
+              <caret line="197" column="7" lean-forward="true" selection-start-line="197" selection-start-column="7" selection-end-line="197" selection-end-column="7" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -70,19 +38,74 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="odbory_bakalar_home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/odbory_bakalar_home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+              <folding>
+                <element signature="n#nav#0;n#div#0;n#!!top" expanded="false" />
+                <marker date="1510488662842" expanded="false" signature="7490:7503" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ubytovanie_strava.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/partials/ubytovanie_strava.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="592">
+              <caret line="84" column="38" lean-forward="true" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+              <folding>
+                <marker date="1510488732318" expanded="false" signature="7004:7017" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mdbootstrap/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="odbory_vyskumnaorientacia.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/odbory_vyskumnaorientacia.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="205" column="54" lean-forward="true" selection-start-line="205" selection-start-column="54" selection-end-line="205" selection-end-column="54" />
+            <state relative-caret-position="465">
+              <caret line="45" column="42" lean-forward="true" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#section#5;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -94,83 +117,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mdbootstrap/css/bootstrap.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8130">
-              <caret line="5" column="83552" lean-forward="false" selection-start-line="5" selection-start-column="83545" selection-end-line="5" selection-end-column="83552" />
-              <folding>
-                <element signature="e#45568#45768#2" expanded="true" />
-                <element signature="e#45890#46039#2" expanded="true" />
-                <element signature="e#46185#46331#2" expanded="true" />
-                <element signature="e#46757#46920#1" expanded="true" />
-                <element signature="e#55587#55830#2" expanded="true" />
-                <element signature="e#56556#56805#2" expanded="true" />
-                <element signature="e#81351#81538#2" expanded="true" />
-                <element signature="e#81584#81773#2" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mdb.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mdbootstrap/css/mdb.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13230">
-              <caret line="25" column="131609" lean-forward="false" selection-start-line="25" selection-start-column="131609" selection-end-line="25" selection-end-column="131609" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.section-scroll.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/plugins/section-scroll-master/jquery.section-scroll.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-              <folding>
-                <element signature="e#222#3426#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="custom_styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mdbootstrap/css/custom_styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state relative-caret-position="465">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mdb.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mdb.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mdbootstrap/css/mdb.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="2110" column="0" lean-forward="false" selection-start-line="2110" selection-start-column="0" selection-end-line="2110" selection-end-column="0" />
+            <state relative-caret-position="294">
+              <caret line="5184" column="0" lean-forward="false" selection-start-line="5184" selection-start-column="0" selection-end-line="5191" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stepper.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mdbootstrap/css/stepper.css">
+      <file leaf-file-name="odbory.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/odbory.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-              <folding />
+            <state relative-caret-position="15">
+              <caret line="87" column="48" lean-forward="false" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="48" />
+              <folding>
+                <element signature="n#div#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -208,11 +182,19 @@
       <find>navbar .</find>
       <find>a</find>
       <find>active</find>
+      <find>btn-pri</find>
+      <find>img</find>
+      <find>btn</find>
+      <find>btn-</find>
+      <find>btn-primary</find>
+      <find>btn-outline-black</find>
     </findStrings>
     <replaceStrings>
       <replace>card card-body m-3</replace>
       <replace>number-box mr-2</replace>
       <replace>fa fa-chevron-circle-down float-right fa-lg</replace>
+      <replace>btn-outline-black</replace>
+      <replace>btn-fiit</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -221,7 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/partials/odbory.html" />
         <option value="$PROJECT_DIR$/partials/odbory_doktorand.html" />
         <option value="$PROJECT_DIR$/partials/odbory_inzinier.html" />
         <option value="$PROJECT_DIR$/partials/prijimacie_konanie.html" />
@@ -235,7 +216,6 @@
         <option value="$PROJECT_DIR$/aaa.html" />
         <option value="$PROJECT_DIR$/mdbootstrap/index.html" />
         <option value="$PROJECT_DIR$/js/pluginsConfig_app.js" />
-        <option value="$PROJECT_DIR$/partials/ubytovanie_strava.html" />
         <option value="$PROJECT_DIR$/mdbootstrap/css/stepper.css" />
         <option value="$PROJECT_DIR$/partials/prijatie_podmienky.html" />
         <option value="$PROJECT_DIR$/partials/financie.html" />
@@ -244,15 +224,19 @@
         <option value="$PROJECT_DIR$/partials/odbory_bakalar_internetovetechnologie.html" />
         <option value="$PROJECT_DIR$/partials/odbory_bakalar_informatika.html" />
         <option value="$PROJECT_DIR$/partials/prijatie_prihlaska.html" />
-        <option value="$PROJECT_DIR$/partials/dianie.html" />
         <option value="$PROJECT_DIR$/mdbootstrap/css/masks.css" />
         <option value="$PROJECT_DIR$/js/pluginsConfig_home.js" />
         <option value="$PROJECT_DIR$/plugins/section-scroll-master/jquery.section-scroll.js" />
         <option value="$PROJECT_DIR$/mdbootstrap/css/mdb.css" />
-        <option value="$PROJECT_DIR$/mdbootstrap/css/custom_styles.css" />
-        <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/templates/Template.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/partials/dianie.html" />
+        <option value="$PROJECT_DIR$/partials/odbory/bakalar/bakalar_home.html" />
+        <option value="$PROJECT_DIR$/partials/odbory.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/mdbootstrap/css/custom_styles.css" />
+        <option value="$PROJECT_DIR$/partials/odbory_bakalar_home.html" />
+        <option value="$PROJECT_DIR$/partials/ubytovanie_strava.html" />
       </list>
     </option>
   </component>
@@ -263,6 +247,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="53" />
     <option name="y" value="22" />
     <option name="width" value="1538" />
     <option name="height" value="1003" />
@@ -297,7 +282,23 @@
             <path>
               <item name="fiit_site" type="b2602c69:ProjectViewProjectNode" />
               <item name="fiit_site" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="mdbootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fiit_site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fiit_site" type="462c0819:PsiDirectoryNode" />
+              <item name="mdbootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fiit_site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fiit_site" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fiit_site" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fiit_site" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -315,11 +316,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/partials" />
+      <recent name="$PROJECT_DIR$/partials/odbory" />
+      <recent name="$PROJECT_DIR$/partials/odbory/bakalar" />
       <recent name="$PROJECT_DIR$/images/studia" />
       <recent name="$PROJECT_DIR$/partials/prijatie" />
-      <recent name="$PROJECT_DIR$/partials/odbory" />
-      <recent name="$PROJECT_DIR$/partials/odbory/inzinier" />
-      <recent name="$PROJECT_DIR$/partials/odbory/doktorand" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -336,6 +337,9 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -370,17 +374,18 @@
       <workItem from="1510152099724" duration="886000" />
       <workItem from="1510170123776" duration="2444000" />
       <workItem from="1510421718445" duration="5382000" />
-      <workItem from="1510436175442" duration="1607000" />
+      <workItem from="1510436175442" duration="3371000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67620000" />
+    <option name="totallyTimeSpent" value="69384000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1538" height="1003" extended-state="0" />
+    <frame x="53" y="22" width="1538" height="1003" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23137772" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23137772" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -411,27 +416,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/partials/odbory/inzinier/inzinier_home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/odbory/vyskumnaorientacia.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/arrows/down.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -500,14 +484,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/ubytovanie_strava.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="59" column="39" lean-forward="true" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/prijatie/podmienky.html">
+    <entry file="file://$PROJECT_DIR$/partials/prijatie_podmienky.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="34" column="17" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
@@ -529,42 +506,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/show_hide_text_toggle.js" />
-    <entry file="file://$PROJECT_DIR$/partials/odbory/bakalar/bakalar_home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/odbory/bakalar/internetovetechnologie.html">
+    <entry file="file://$PROJECT_DIR$/partials/odbory_bakalar_internetovetechnologie.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/odbory/bakalar/informacnabezpecnost.html">
+    <entry file="file://$PROJECT_DIR$/partials/odbory_bakalar_informacnabezpecnost.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/odbory/bakalar/informatika.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="148" lean-forward="false" selection-start-line="59" selection-start-column="148" selection-end-line="59" selection-end-column="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/prijatie/prihlaska.html">
+    <entry file="file://$PROJECT_DIR$/partials/prijatie_prihlaska.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="340" column="82" lean-forward="false" selection-start-line="340" selection-start-column="82" selection-end-line="340" selection-end-column="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/prijatie/sutaze.html">
+    <entry file="file://$PROJECT_DIR$/partials/prijatie_sutaze.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="41" column="44" lean-forward="false" selection-start-line="41" selection-start-column="44" selection-end-line="41" selection-end-column="44" />
@@ -576,20 +539,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/dianie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="115" column="31" lean-forward="false" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#section#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#button#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -640,64 +589,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mdbootstrap/css/custom_styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/partials/prijimacie_konanie.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="106" lean-forward="false" selection-start-line="4" selection-start-column="106" selection-end-line="4" selection-end-column="106" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="197" column="7" lean-forward="false" selection-start-line="197" selection-start-column="7" selection-end-line="197" selection-end-column="7" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1510436809799" expanded="true" signature="2048:2181" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="205" column="54" lean-forward="true" selection-start-line="205" selection-start-column="54" selection-end-line="205" selection-end-column="54" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#section#5;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -720,17 +616,142 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mdbootstrap/css/mdb.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13230">
-          <caret line="25" column="131609" lean-forward="false" selection-start-line="25" selection-start-column="131609" selection-end-line="25" selection-end-column="131609" />
+        <state relative-caret-position="338">
+          <caret line="25" column="119787" lean-forward="false" selection-start-line="25" selection-start-column="119696" selection-end-line="25" selection-end-column="119787" />
+          <folding>
+            <element signature="e#122800#123043#2" expanded="true" />
+            <element signature="e#124460#124709#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/dianie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="403" column="14" lean-forward="false" selection-start-line="403" selection-start-column="14" selection-end-line="403" selection-end-column="14" />
+          <folding>
+            <element signature="n#nav#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#section#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#section#2;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#section#3;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/odbory_bakalar_informatika.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="853">
+          <caret line="59" column="148" lean-forward="false" selection-start-line="59" selection-start-column="148" selection-end-line="59" selection-end-column="148" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/odbory_vyskumnaorientacia.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="45" column="42" lean-forward="true" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="197" column="7" lean-forward="true" selection-start-line="197" selection-start-column="7" selection-end-line="197" selection-end-column="7" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1510436809799" expanded="true" signature="2048:2181" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/odbory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="87" column="48" lean-forward="false" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="48" />
+          <folding>
+            <element signature="n#div#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdbootstrap/css/mdb.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="2110" column="0" lean-forward="false" selection-start-line="2110" selection-start-column="0" selection-end-line="2110" selection-end-column="0" />
+        <state relative-caret-position="294">
+          <caret line="5184" column="0" lean-forward="false" selection-start-line="5184" selection-start-column="0" selection-end-line="5191" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mdbootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mdbootstrap/css/custom_styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/odbory_bakalar_home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding>
+            <element signature="n#nav#0;n#div#0;n#!!top" expanded="false" />
+            <marker date="1510488662842" expanded="false" signature="7490:7503" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/ubytovanie_strava.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="84" column="38" lean-forward="true" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+          <folding>
+            <marker date="1510488732318" expanded="false" signature="7004:7017" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

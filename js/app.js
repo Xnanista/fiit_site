@@ -10,7 +10,7 @@ angular.module("fiitSite", ["ngRoute"])
                 title: 'Prehľad odborov'
             })
             .when("/odbory/bakalar", {
-                templateUrl: "../partials/odbory_odbory_bakalar_home.html",
+                templateUrl: "../partials/odbory_bakalar_home.html",
                 title: 'Bakalárske odbory'
             })
             .when("/odbory/bakalar/informatika", {

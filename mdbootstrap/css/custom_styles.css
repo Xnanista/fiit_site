@@ -31,6 +31,11 @@
     border-color: #24a9dc
 }
 
+.btn-fiit {
+    background-color: #24a9dc; }
+.btn-fiit:hover, .btn-fiit:focus, .btn-fiit:active, .btn-fiit.active {
+    background-color: #26c3f9 !important; }
+
 .pulse_black {
     border-radius: 50%;
     cursor: pointer;
