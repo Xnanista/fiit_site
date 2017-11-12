@@ -6,6 +6,9 @@
 #### Demo
 [FIIT pre stredoškolákov](https://www.xnanista.github.io/fiit_site)
 
+#### Návod
+Návod nájdete v priečinku doc v repozitári.
+
 ### Autori
 
 - Boris Naništa
