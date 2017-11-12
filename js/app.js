@@ -10,43 +10,43 @@ angular.module("fiitSite", ["ngRoute"])
                 title: 'Prehľad odborov'
             })
             .when("/odbory/bakalar", {
-                templateUrl: "../partials/odbory/bakalar/bakalar_home.html",
+                templateUrl: "../partials/odbory_odbory_bakalar_home.html",
                 title: 'Bakalárske odbory'
             })
             .when("/odbory/bakalar/informatika", {
-                templateUrl: "../partials/odbory/bakalar/informatika.html",
+                templateUrl: "../partials/odbory_bakalar_informatika.html",
                 title: 'Bakalár - Informatika'
             })
             .when("/odbory/bakalar/informacna_bezpecnost", {
-                templateUrl: "../partials/odbory/bakalar/informacnabezpecnost.html",
+                templateUrl: "../partials/odbory_bakalar_informacnabezpecnost.html",
                 title: 'Bakalár - Informačná bezpečnosť'
             })
             .when("/odbory/bakalar/internetove_technologie", {
-                templateUrl: "../partials/odbory/bakalar/internetovetechnologie.html",
+                templateUrl: "../partials/odbory_bakalar_internetovetechnologie.html",
                 title: 'Bakalár - Internetove technológie'
             })
             .when("/odbory/inzinier", {
-                templateUrl: "../partials/odbory/inzinier/inzinier_home.html",
+                templateUrl: "../partials/odbory_inzinier_home.html",
                 title: 'Inžinier'
             })
             .when("/odbory/doktorand", {
-                templateUrl: "../partials/odbory/doktorand/doktorand_home.html",
+                templateUrl: "../partials/odbory_doktorand_home.html",
                 title: 'Doktorand'
             })
             .when("/odbory/vyskumna_orientacia", {
-                templateUrl: "../partials/odbory/vyskumnaorientacia.html",
+                templateUrl: "../partials/odbory_vyskumnaorientacia.html",
                 title: 'Výskumná orientácia'
             })
             .when("/prijatie/podmienky", {
-                templateUrl: "../partials/prijatie/podmienky.html",
+                templateUrl: "../partials/prijatie_podmienky.html",
                 title: 'Podmienky prijatia'
             })
             .when("/prijatie/podmienky/sutaze", {
-                templateUrl: "../partials/prijatie/sutaze.html",
+                templateUrl: "../partials/prijatie_sutaze.html",
                 title: 'Súťaže'
             })
             .when("/prijatie/prihlaska", {
-                templateUrl: "../partials/prijatie/prihlaska.html",
+                templateUrl: "../partials/prijatie_prihlaska.html",
                 title: 'Prihláška'
             })
             .when("/ubytovanieastrava", {

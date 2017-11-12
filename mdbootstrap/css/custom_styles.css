@@ -19,6 +19,18 @@
     }
 }
 
+.btn-outline-fiit {
+    border: 2px solid #24a9dc;
+    color: #24a9dc !important;
+    background-color: transparent
+}
+
+.btn-outline-fiit.active, .btn-outline-fiit:active, .btn-outline-fiit:active:focus, .btn-outline-fiit:focus, .btn-outline-fiit:hover {
+    background-color: transparent;
+    color: #24a9dc;
+    border-color: #24a9dc
+}
+
 .pulse_black {
     border-radius: 50%;
     cursor: pointer;
