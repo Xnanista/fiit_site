@@ -1,4 +1,10 @@
 {
+  "__coment__link": "Linky na stránky v inom jazyku",
+  "prihlaska-link" : "#!/prijatie/prihlaska/en",
+  "podmienky-link": "#!prijatie/podmienky/en",
+  "sutaze-link": "#!/prijatie/podmienky/sutaze/en",
+
+  "__comment__title": "Preklad nazvov stranok a navbaru",
   "prehlad-odborov": "Courses Overview",
   "bak-odbory": "Bachelor courses",
   "bak-info": "Bachelor - Informatics",
@@ -19,7 +25,11 @@
   "kontakt": "Contact us",
   "dom": "HOME",
   "vyhlad": "Search",
-  "prihlaska-link" : "#!/prijatie/prihlaska/en",
-  "podmienky-link": "#!prijatie/podmienky/en",
-  "sutaze-link": "#!/prijatie/podmienky/sutaze/en"
+
+  "__comment__footer": "Preklad Footra",
+  "tel": "Phone",
+  "mail": "E-Mail",
+  "soc-siete": "Social networks",
+  "najst": "Where we are?",
+  "doprava": "Public Transport"
 }

@@ -1,4 +1,10 @@
 {
+  "__coment__link": "Linky na stránky v inom jazyku",
+  "prihlaska-link" : "#!/prijatie/prihlaska/",
+  "podmienky-link": "#!prijatie/podmienky/",
+  "sutaze-link": "#!/prijatie/podmienky/sutaze/",
+
+  "__comment__title": "Preklad nazvov stranok a navbaru",
   "prehlad-odborov": "Prehľad odborov",
   "bak-odbory": "Bakalárske odbory",
   "bak-info": "Bakalár - Informatika",
@@ -19,7 +25,11 @@
   "kontakt": "Kontakt",
   "dom": "Domov",
   "vyhlad": "Vyhľadávanie",
-  "prihlaska-link" : "#!/prijatie/prihlaska/",
-  "podmienky-link": "#!prijatie/podmienky/",
-  "sutaze-link": "#!/prijatie/podmienky/sutaze/"
+
+  "__comment__footer": "Preklad Footra",
+  "tel": "Telefón",
+  "mail": "E-Mail",
+  "soc-siete": "Sociálne siete",
+  "najst": "Kde nás nájdete",
+  "doprava": "Hromadná doprava"
 }
