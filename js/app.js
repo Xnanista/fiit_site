@@ -1,5 +1,5 @@
-angular.module("fiitSite", ["ngRoute"])
-    .config(function ($routeProvider, $locationProvider) {
+angular.module("fiitSite", ["ngRoute", 'pascalprecht.translate', 'ngSanitize'])
+    .config(function ($routeProvider, $locationProvider, $translateProvider) {
         $routeProvider
             .otherwise({
                 templateUrl: "../partials/default.html",
@@ -7,63 +7,86 @@ angular.module("fiitSite", ["ngRoute"])
             })
             .when("/odbory", {
                 templateUrl: "../partials/odbory.html",
-                title: 'Prehľad odborov'
+                title: 'prehlad-odborov'
             })
             .when("/odbory/bakalar", {
                 templateUrl: "../partials/odbory_bakalar_home.html",
-                title: 'Bakalárske odbory'
+                title: 'bak-odbory'
             })
             .when("/odbory/bakalar/informatika", {
                 templateUrl: "../partials/odbory_bakalar_informatika.html",
-                title: 'Bakalár - Informatika'
+                title: 'bak-info'
             })
             .when("/odbory/bakalar/informacna_bezpecnost", {
                 templateUrl: "../partials/odbory_bakalar_informacnabezpecnost.html",
-                title: 'Bakalár - Informačná bezpečnosť'
+                title: 'bak-bez'
             })
             .when("/odbory/bakalar/internetove_technologie", {
                 templateUrl: "../partials/odbory_bakalar_internetovetechnologie.html",
-                title: 'Bakalár - Internetove technológie'
+                title: 'bak-tech'
             })
             .when("/odbory/inzinier", {
                 templateUrl: "../partials/odbory_inzinier_home.html",
-                title: 'Inžinier'
+                title: 'ing'
             })
             .when("/odbory/doktorand", {
                 templateUrl: "../partials/odbory_doktorand_home.html",
-                title: 'Doktorand'
+                title: 'dok'
             })
             .when("/odbory/vyskumna_orientacia", {
                 templateUrl: "../partials/odbory_vyskumnaorientacia.html",
-                title: 'Výskumná orientácia'
+                title: 'vyskum-orient'
             })
             .when("/prijatie/podmienky", {
                 templateUrl: "../partials/prijatie_podmienky.html",
-                title: 'Podmienky prijatia'
+                title: 'podm-prij'
+            })
+            .when("/prijatie/podmienky/en", {
+                templateUrl: "../partials/prijatie_podmienky_en.html",
+                title: 'podm-prij'
             })
             .when("/prijatie/podmienky/sutaze", {
                 templateUrl: "../partials/prijatie_sutaze.html",
-                title: 'Súťaže'
+                title: 'sutaz'
+            })
+            .when("/prijatie/podmienky/sutaze/en", {
+                templateUrl: "../partials/prijatie_sutaze_en.html",
+                title: 'sutaz'
             })
             .when("/prijatie/prihlaska", {
                 templateUrl: "../partials/prijatie_prihlaska.html",
-                title: 'Prihláška'
+                title: 'prihlaska'
+            })
+            .when("/prijatie/prihlaska/en", {
+                templateUrl: "../partials/prijatie_prihlaska_en.html",
+                title: 'prihlaska'
             })
             .when("/ubytovanieastrava", {
                 templateUrl: "../partials/ubytovanie_strava.html",
-                title: 'Ubytovanie a strava'
+                title: 'ubytovanie'
             })
             .when("/financie", {
                 templateUrl: "../partials/financie.html",
-                title: 'Financovanie'
+                title: 'financ'
             })
             .when("/dianie", {
                 templateUrl: "../partials/dianie.html",
-                title: 'Dianie na fakulte'
+                title: 'dianie'
             });
         $locationProvider.hashPrefix('!');
+
+        //translation
+        $translateProvider.useSanitizeValueStrategy('sanitizeParameters');
+        $translateProvider.useStaticFilesLoader({
+            prefix: '../languages/',
+            suffix: '.json'
+        });
+        $translateProvider.preferredLanguage('sk');
+
+
     })
-    .controller('MainCtrl', function ($scope, $rootScope, $location) {
+    .controller('MainCtrl', function ($scope, $rootScope, $location, $translate, $route) {
+        $scope.akt_lang = "SK";
         $scope.location = $location.path();
         $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
             $scope.location = $location.path();
@@ -87,6 +110,32 @@ angular.module("fiitSite", ["ngRoute"])
                     }
                 }
             }
+        };
+
+        $rootScope.$on('$translateChangeEnd', function (event, args) {
+            var loc = $location.path();
+            if ($scope.akt_lang === "SK") {
+                if (args.language === "en" && ((loc + "/en") in $route.routes)) {
+                    $scope.akt_lang = args.language.toUpperCase();
+                    $location.path(loc + "/en");
+                    return;
+                } else {
+                    $scope.akt_lang = args.language.toUpperCase();
+                    return;
+                }
+            }
+            if ($scope.akt_lang === "EN") {
+                if (args.language === "sk" && (loc.indexOf("/en") !== -1)) {
+                    $scope.akt_lang = args.language.toUpperCase();
+                    $location.path(loc.slice(0, -2));
+                } else {
+                    $scope.akt_lang = args.language.toUpperCase();
+                }
+            }
+        });
+
+        $scope.changeLanguage = function (langKey) {
+            $translate.use(langKey);
         };
     });
 

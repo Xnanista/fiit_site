@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sk" ng-app="fiitSite" ng-controller="MainCtrl">
 <head>
-    <title>FIIT - {{title}}</title>
+    <title>FIIT - {{ title | translate }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -20,6 +20,9 @@
     <!-- AngjlarJS -->
     <script src="../js/angular/angular.js"></script>
     <script src="../js/angular/angular-route.js"></script>
+    <script src="../js/angular/angular-sanitize.js"></script>
+    <script src="../js/angular-translate/angular-translate.js"></script>
+    <script src="../js/angular-translate/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
     <script src="../js/app.js"></script>
 </head>
 
@@ -28,7 +31,7 @@
 <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-fiit">
         <div class="navbar-brand"><img src="../images/stu_napis.svg"
-                                                          style="width: 35px; height: 100%;"></div>
+                                       style="width: 35px; height: 100%;"></div>
 
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -41,51 +44,51 @@
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Domov</a>
+                    <a class="nav-link" href="../index.html" translate="dom"></a>
                 </li>
                 <li class="nav-item dropdown" ng-class="{active: location === '/' || location === '/odbory' || location === '/odbory/bakalar' ||
             location === '/odbory/inzinier' || location === '/odbory/doktorand' || location === '/odbory/vyskumna_orientacia' || location === '/financie'}">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                       aria-expanded="false">Štúdium</a>
+                       aria-expanded="false" translate="studium"></a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#!/odbory">Prehľad odborov</a>
-                        <a class="dropdown-item" href="#!financie">Financovanie</a>
+                        <a class="dropdown-item" href="#!/odbory" translate="prehlad-odborov"></a>
+                        <a class="dropdown-item" href="#!financie" translate="financ"></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#!/odbory/bakalar">Bakalárske</a>
-                        <a class="dropdown-item" href="#!/odbory/inzinier">Inžinierske</a>
-                        <a class="dropdown-item" href="#!/odbory/doktorand">Doktorandské</a>
+                        <a class="dropdown-item" href="#!/odbory/bakalar" translate="bak-odbory"></a>
+                        <a class="dropdown-item" href="#!/odbory/inzinier" translate="ing"></a>
+                        <a class="dropdown-item" href="#!/odbory/doktorand" translate="dok"></a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#!/odbory/vyskumna_orientacia">Výskumná orientácia</a>
+                        <a class="dropdown-item" href="#!/odbory/vyskumna_orientacia" translate="vyskum-orient"></a>
                     </div>
                 </li>
                 <li class="nav-item dropdown"
                     ng-class="{active: location === '/prijatie/podmienky' || location === '/prijatie/prihlaska' || location === '/prijatie/podmienky/sutaze'}">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                       aria-expanded="false">Chcem byť FIIT</a>
+                       aria-expanded="false" translate="chcem-byt-fiit"></a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#!prijatie/podmienky">Podmienky prijatia</a>
-                        <a class="dropdown-item" href="#!prijatie/prihlaska">Ako sa prihlásiť?</a>
+                        <a class="dropdown-item" translate-attr="{href : 'podmienky-link'}" translate="podm-prij"></a>
+                        <a class="dropdown-item" translate-attr="{href : 'prihlaska-link'}" translate="prihlaska"></a>
                     </div>
                 </li>
                 <li class="nav-item dropdown"
                     ng-class="{active: location === '/dianie' || location === '/ubytovanieastrava'}">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                       aria-expanded="false">Život</a>
+                       aria-expanded="false" translate="zivot"></a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#!dianie">Dianie na fakulte</a>
-                        <a class="dropdown-item" href="#!ubytovanieastrava">Ubytovanie a strava</a>
+                        <a class="dropdown-item" href="#!dianie" translate="dianie"></a>
+                        <a class="dropdown-item" href="#!ubytovanieastrava" translate="ubytovanie"></a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" onclick="tolast()">Kontakt</a>
+                    <a class="nav-link" onclick="tolast()" translate="kontakt"></a>
                 </li>
             </ul>
             <!-- Links -->
 
             <!-- Search form -->
             <form class="form-inline">
-                <input class="form-control mr-sm-2" type="text" placeholder="Vyhľadávanie" aria-label="Search"
-                       list="obsah" id="search" autocomplete="off">
+                <input class="form-control mr-sm-2" type="text" aria-label="Search"
+                       list="obsah" id="search" autocomplete="off" translate-attr="{ placeholder: 'vyhlad'}">
                 <button class="btn btn-sm btn-outline-white my-0" ng-click="vyhladaj()" type="submit"><i
                         class="fa fa-search" aria-hidden="true"></i>
                 </button>
@@ -103,12 +106,12 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                       aria-expanded="false">SK</a>
+                       aria-expanded="false">{{akt_lang}}</a>
                     <div class="dropdown-menu dropdown-primary dropdown-menu-right"
                          aria-labelledby="navbarDropdownMenuLink">
                         <h6 class="dropdown-header">Jazyk</h6>
-                        <a class="dropdown-item">SK</a>
-                        <a class="dropdown-item">EN</a>
+                        <a ng-click="changeLanguage('sk')" class="dropdown-item">SK</a>
+                        <a ng-click="changeLanguage('en')" class="dropdown-item">EN</a>
                     </div>
                 </li>
             </ul>
