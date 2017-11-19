@@ -1,6 +1,6 @@
-#FIIT_SITE
+﻿# FIIT_SITE
 
-- Tento projekt je webowá stránka na tému Stránka pre stredoškolákov, ktorý sa hlásia na vysoké školy. 
+- Tento projekt je webová stránka na tému Stránka pre stredoškolákov, ktorý sa hlásia na vysoké školy. 
 - Projekt je vytvorený na predmet Interakcia človeka s počítačom, ktorý sa koná v zimnom semestri 2017/18 na Fakulte informatiky a informačných technológií.
 
 #### Demo
@@ -15,4 +15,4 @@ Návod nájdete v priečinku doc v repozitári.
 - Peter Pápay
 - Davis Pavelka
 - Lukáš Odler
-- Jakub Sedláž
+- Jakub Sedlář
