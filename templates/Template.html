@@ -46,8 +46,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="../index.html" translate="dom"></a>
                 </li>
-                <li class="nav-item dropdown" ng-class="{active: location === '/' || location === '/odbory' || location === '/odbory/bakalar' ||
-            location === '/odbory/inzinier' || location === '/odbory/doktorand' || location === '/odbory/vyskumna_orientacia' || location === '/financie'}">
+                <li class="nav-item dropdown" ng-class="{active : akt === 1}">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false" translate="studium"></a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
@@ -61,8 +60,7 @@
                         <a class="dropdown-item" href="#!/odbory/vyskumna_orientacia" translate="vyskum-orient"></a>
                     </div>
                 </li>
-                <li class="nav-item dropdown"
-                    ng-class="{active: location === '/prijatie/podmienky' || location === '/prijatie/prihlaska' || location === '/prijatie/podmienky/sutaze'}">
+                <li class="nav-item dropdown" ng-class="{active : akt === 2}">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false" translate="chcem-byt-fiit"></a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
@@ -70,8 +68,7 @@
                         <a class="dropdown-item" translate-attr="{href : 'prihlaska-link'}" translate="prihlaska"></a>
                     </div>
                 </li>
-                <li class="nav-item dropdown"
-                    ng-class="{active: location === '/dianie' || location === '/ubytovanieastrava'}">
+                <li class="nav-item dropdown" ng-class="{active : akt === 3}">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                        aria-expanded="false" translate="zivot"></a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
@@ -123,7 +120,6 @@
 <ng-view autoscroll="true"></ng-view>
 
 <footer id="footer" class="page-footer bg-dark center-on-small-only">
-
     <!--Footer Links-->
     <div class="container">
         <div class="row">
@@ -131,8 +127,11 @@
             <div class="col-md-3">
                 <h5 class="title" translate="kontakt"></h5>
                 <ul class="">
-                    <li class=""><i class="fa fa-phone" aria-hidden="true"></i> {{'tel' | translate}}<br>+421 2 210 22 204</li>
-                    <li class=""><i class="fa fa-envelope" aria-hidden="true" ></i> {{'mail' | translate}}<br>info@fiit.stuba.sk</li>
+                    <li class=""><i class="fa fa-phone" aria-hidden="true"></i> {{'tel' | translate}}<br>+421 2 210 22
+                        204
+                    </li>
+                    <li class=""><i class="fa fa-envelope" aria-hidden="true"></i> {{'mail' | translate}}<br>info@fiit.stuba.sk
+                    </li>
                 </ul>
                 <h5 class="title" translate="soc-siete"></h5>
                 <ul class="">

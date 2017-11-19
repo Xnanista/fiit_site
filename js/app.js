@@ -85,14 +85,13 @@ angular.module("fiitSite", ["ngRoute", 'pascalprecht.translate', 'ngSanitize'])
 
 
     })
-    .controller('MainCtrl', function ($scope, $rootScope, $location, $translate, $route) {
+    .controller('MainCtrl', function ($scope, $rootScope, $location, $translate, $route, aktiveLink) {
         $scope.akt_lang = "SK";
-        $scope.location = $location.path();
         $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
-            $scope.location = $location.path();
             if (current.hasOwnProperty('$$route')) {
                 $scope.title = current.$$route.title;
             }
+            $scope.akt = aktiveLink.activePage($location.path());
         });
         $rootScope.$on('$routeChangeStart', function (event, current, previous) {
             if (previous && previous.hasOwnProperty('$$route')) {
@@ -137,5 +136,46 @@ angular.module("fiitSite", ["ngRoute", 'pascalprecht.translate', 'ngSanitize'])
         $scope.changeLanguage = function (langKey) {
             $translate.use(langKey);
         };
-    });
+    }).service('aktiveLink', function () {
+    var studies_routes = [
+        '/',
+        '/odbory',
+        '/odbory/bakalar',
+        '/odbory/inzinier',
+        '/odbory/doktorand',
+        '/odbory/vyskumna_orientacia',
+        '/financie'
+    ];
+
+    var chcem_routes = [
+        '/prijatie/podmienky',
+        '/prijatie/podmienky/en',
+        '/prijatie/prihlaska',
+        '/prijatie/prihlaska/en',
+        '/prijatie/podmienky/sutaze',
+        '/prijatie/podmienky/sutaze/en'
+
+    ];
+
+    var zivot_routes = [
+        '/ubytovanieastrava',
+        '/ubytovanieastrava/en',
+        '/dianie',
+        '/dianie/en'
+    ];
+
+    this.activePage = function (path) {
+        if (studies_routes.indexOf(path) > -1) {
+            return 1;
+        }
+
+        if (chcem_routes.indexOf(path) > -1) {
+            return 2;
+        }
+
+        if (zivot_routes.indexOf(path) > -1) {
+            return 3;
+        }
+    }
+});
 
